@@ -1,20 +1,31 @@
 * {
     margin: 0;
     padding: 0;
-    --kolor-tekstu: #E8F1F2;
+    --color-white: #E8F1F2;
+    --color-background: #1B98E0;
+    --color-lapis: #247BA0;
+    --color-sea-blue: #006494;
+    --color-yankees-blue: #13293D;
+    color: var(--color-white);
+}
+
+body {
+    background-color: var(--color-background);
 }
 
 #sidebar {
-    color: var(--kolor-tekstu);
+    color: var(--kolor-white);
     position: fixed;
     height: 100vh;
     width: 250px;
-    background-color: #13293D;
+    background-color: var(--color-yankees-blue);
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    transition: 1s;
+    transform: translateX(0)px;
 }
 
 #arrow {
@@ -45,7 +56,7 @@ li > a{
 }
 
 li:hover {
-    background-color: #006494;;
+    background-color:  var(--color-lapis);
 }
 
 a:visited {
@@ -71,7 +82,7 @@ li .icon {
 }
 
 .rotate {
-    transition: 0.5s;
-    transform: rotate(180deg);
+    transition: 0.7s;
+    transform: rotatey(180deg) translateX(-50px);
 }
 
