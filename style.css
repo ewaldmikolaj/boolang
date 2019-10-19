@@ -1,29 +1,42 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    --kolor-tekstu
+    --kolor-tekstu: #E8F1F2;
 }
 
 #sidebar {
-    color: #E8F1F2;
+    color: var(--kolor-tekstu);
     position: fixed;
     height: 100vh;
     width: 250px;
     background-color: #13293D;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
+
+#arrow {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
 #avatar {
     width: 70px;
     height: 70px;
     background-color: grey;
     border-radius: 100%;
-    margin: auto;
+    margin: 90px auto 45px auto;
 }
 
 li {
     margin: 10px 0px 10px 0px;
+    display: block;
+    padding-left: 20px;
 }
 
 li > a{ 
@@ -31,23 +44,34 @@ li > a{
     font-size: 30px;
 }
 
+li:hover {
+    background-color: #006494;;
+}
+
 a:visited {
-    color
+    color: var(--kolor-tekstu);
 }
 
 li .icon {
     height: 25px;
     width: 25px;
-}
-
-#arrow {
-    height: 30px;
-    width: 30px;
+    padding-right: 7px;
 }
 
 #sidebar #logo {
     height: 50px;
     width: 50px;
     display: block;
-    margin: auto;
+    margin: auto auto 40px auto;
 }
+
+.hide {
+    transition: 1s;
+    transform: translateX(-250px);
+}
+
+.rotate {
+    transition: 0.5s;
+    transform: rotate(180deg);
+}
+
