@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BooLang</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Varela&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    <nav id="sidebar">
-        <img src="icons/left-arrow.png" alt="arrow" id="arrow">
+<nav id="sidebar" class="hide">
+        <img src="icons/left-arrow.png" alt="arrow" id="arrow" class="rotate">
         <div id="avatar"></div>
         <ul>
             <li class="menu">
@@ -40,8 +28,5 @@
             </li>
         </ul>
         <img id="logo" src="icons/g3796.png" alt="logo">
-        <script src="script.js"></script>
+        <script src="links/script.js"></script>
     </nav>
-    <section></section>
-</body>
-</html>

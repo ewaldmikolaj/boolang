@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    --color-white: #E8F1F2;
+    --color-background: #1B98E0;
+    --color-lapis: #247BA0;
+    --color-sea-blue: #006494;
+    --color-yankees-blue: #13293D;
+    color: var(--color-white);
+    --czcionka: 'Open Sans' , sans-serif;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+#sidebar {
+    color: var(--kolor-white);
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    background-color: var(--color-yankees-blue);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--czcionka);
+    font-weight: 250;
+    transition: 1s;
+}
+
+#arrow {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+#avatar {
+    width: 70px;
+    height: 70px;
+    background-color: grey;
+    border-radius: 100%;
+    margin: 90px auto 45px auto;
+}
+
+li {
+    margin: 6px 0px 6px 0px;
+    display: block;
+    padding: 5px 0 5px 20px;
+    line-height: 25px;
+}
+
+li > a{ 
+    text-decoration: none;
+    font-size: 30px;
+}
+
+li:hover {
+    background-color:  var(--color-lapis);
+}
+
+a:visited {
+    color: var(--kolor-tekstu);
+}
+
+li .icon {
+    height: 25px;
+    width: 25px;
+    padding-right: 7px;
+}
+
+#sidebar #logo {
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: auto auto 40px auto;
+}
+
+.hide {
+    transform: translateX(-250px);
+}
+
+.rotate {
+    transition: 0.7s;
+    transform: rotatey(180deg) rotateX(180deg) translateX(-50px);
+}
+
+#signIn {
+    background-color: var(--color-sea-blue);
+    width: 7vw;
+    height: 4vh;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    border-radius: 30px;
+}
+
+#signIn:hover {
+    background-color: var(--color-lapis);
+}
+
+#signIn > p {
+    display: block;
+    text-align: center;
+    padding: calc();
+    font-family: var(--czcionka);
+    letter-spacing: 2px;
+    font-size: 17px;
+    line-height: 4vh;
+    font-weight: 550;
+    color: var(--color-yankees-blue);
+}
+
+#welcome {
+    padding-top: 27vh;
+    padding-left: 25vw;
+    font-family: var(--czcionka);
+    width: 55vw;
+}
+
+#title {
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    padding-bottom: 70px;
+}
+
+#welcome > p {
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+
+.job {
+    padding-top: 80px;
+    height: 100px;
+    width: 100px;
+    margin: 0px 30px 0px 0px;
+}
+
+#left {
+    height: 100vh;
+    width: 50vw;
+    background-color: var(--color-yankees-blue);
+    font-size: 60px;
+    font-family: var(--czcionka);
+    font-weight: 400;
+    line-height: 60px;
+}
+
+#left div img {
+    height: 60px;
+    width: 60px;
+}
+
+#left div {
+    position: absolute;
+    left: 25vw;
+    top: 50vh;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#right {
+    height: 100vh;
+    width: 50vw;
+    background-color: var(--color-background);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+}
+
+#right form {
+    position: absolute;
+    
+}
+
+
