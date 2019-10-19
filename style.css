@@ -83,6 +83,19 @@ li .icon {
 
 .rotate {
     transition: 0.7s;
-    transform: rotatey(180deg) translateX(-50px);
+    transform: rotatey(180deg) rotateX(180deg) translateX(-50px);
 }
 
+#signIn {
+    background-color: var(--color-sea-blue);
+    color: var(--color-yankees-blue);
+    width: 7vw;
+    height: 4vh;
+    text-align: center;
+}
+
+#signIn > p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
