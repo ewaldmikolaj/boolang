@@ -7,19 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="progress">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
     <section id="right">
+        <div id="progress">
+            <div><p>1</p></div>
+            <div></div>
+            <div><p>2</p></div>
+            <div></div>
+            <div><p>3</p></div>
+        </div>
         <form action="" method="post">
             <label for="email">Email</label><br>
-            <input type="text" name="email" class="form"><br>
+            <input type="text" name="email" class="form one"><br>
             <label for="password">Hasło</label><br>
-            <input type="password" name="password" class="form"><br>
+            <input type="password" name="password" class="form one"><br>
             <label for="password2">Potwierdź hasło</label><br>
-            <input type="password" name="password2" class="form">
+            <input type="password" name="password2" class="form one">
         </form>
     </section>
 </body>

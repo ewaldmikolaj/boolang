@@ -165,15 +165,45 @@ li .icon {
     height: 100vh;
     width: 50vw;
     background-color: var(--color-background);
+    font-family: var(--czcionka);
     position: absolute;
     top: 0px;
     right: 0px;
-    display: flex;
 }
 
-#right form {
+#progress {
     position: absolute;
-    
+    left: 25%;
+    top: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transform: scaleX(-50%) scaleY(-50%);
 }
 
+#progress  div:nth-child(odd) {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-yankees-blue);   
+}
 
+#progress div:nth-child(odd) p {
+    text-align: center;
+    line-height: 60px;
+    font-size: 2.5vh;
+    font-family: var(--czcionka);
+}
+
+#progress div:nth-child(even) {
+    width: 120px;
+    height: 10px;
+    margin: auto 0 auto 0;
+    background-color: var(--color-yankees-blue);
+}
+
+.form {
+    width: 14vw;
+    height: 3vh;
+    border-radius: 20px;
+}
