@@ -1,13 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
+:root {
     --color-white: #E8F1F2;
     --color-background: #1B98E0;
     --color-lapis: #247BA0;
     --color-sea-blue: #006494;
     --color-yankees-blue: #13293D;
-    color: var(--color-white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
     --czcionka: 'Open Sans' , sans-serif;
+    color: var(--color-white);
 }
 
 body {
@@ -173,12 +176,12 @@ li .icon {
 
 #progress {
     position: absolute;
-    left: 25%;
-    top: 25%;
+    left: 25vw;
+    top: 25vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    transform: scaleX(-50%) scaleY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
 
 #progress  div:nth-child(odd) {
@@ -202,8 +205,35 @@ li .icon {
     background-color: var(--color-yankees-blue);
 }
 
-.form {
-    width: 14vw;
-    height: 3vh;
+#right form .form {
+    width: 18vw;
+    height: 4vh;
     border-radius: 20px;
+    color: black;
+    margin-bottom: 43px;
+}
+
+#right form {
+    position: absolute;
+    top: 57vh;
+    left: 25vw;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+
+.przycisk {
+    position: absolute;
+    width: 12vh;
+    height: 4vh;
+    border-radius: 20px;
+    color: var(--color-white);
+    background-color: var(--color-yankees-blue);
+}
+
+.przycisk .cofnij {
+    left: 1vw;
+}
+
+.przycisk .dalej {
+    right: 1vw;
 }

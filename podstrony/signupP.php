@@ -21,7 +21,9 @@
             <label for="password">Hasło</label><br>
             <input type="password" name="password" class="form one"><br>
             <label for="password2">Potwierdź hasło</label><br>
-            <input type="password" name="password2" class="form one">
+            <input type="password" name="password2" class="form one"><br>
+            <button class="przycisk cofnij" >cofnij</button>
+            <input type="submit" value="dalej" class="przycisk dalej">
         </form>
     </section>
 </body>
