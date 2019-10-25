@@ -215,18 +215,22 @@ li .icon {
     border-radius: 20px;
     color: black;
     margin-bottom: 43px;
+    padding-left: 10px;
+}
+
+label {
+    display: block;
 }
 
 #right form {
     position: absolute;
     top: 57vh;
-    left: 25vw;
+    left: 27vw;
     transform: translateY(-50%) translateX(-50%);
 }
 
 
 .przycisk {
-    position: absolute;
     width: 12vh;
     height: 4vh;
     border-radius: 20px;
@@ -236,9 +240,13 @@ li .icon {
 }
 
 .cofnij {
-    left: 1vw;
+    margin: 3vh auto auto 1vw;
 }
 
 .dalej {
-    right: 1vw;
+    margin: 3vh 1vw auto 4vw;
+}
+
+.display {
+    display: none;
 }
