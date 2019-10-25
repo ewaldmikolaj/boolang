@@ -15,20 +15,33 @@
             <div></div>
             <div><p>3</p></div>
         </div>
-        <!--PANIE EGZAMINATORZE KURWA TU SĄ MOJE A I B DO NICH WPISUJE DANE, PISZĘ DO DLA PANA, MIŁEGO DNIA BRKI TO-->
         <form action="" method="post">
-            <label for="email" class="one">Email</label>
-            <input type="text" name="email" class="form one">
-            <label for="password" class="one">Hasło</label>
-            <input type="password" name="password" class="form one">
-            <label for="password2" class="one">Potwierdź hasło</label>
-            <input type="password" name="password2" class="form one">
-            <label for="nick" class="display two">Nick</label>
-            <input type="text" name="nick" class="form two display">
-            <label for="avatar" class="display two">Zdjęcie profilowe</label>
-            <input type="file" accept="image/x-png,image/gif,image/jpeg" name="avatar" class="avatar two display">
-            <button class="przycisk cofnij" >cofnij</button>
-            <button class="przycisk dalej">dalej</button>
+            <div class="one">
+                <label for="email">Email</label>
+                <input type="text" name="email" class="form">
+                <label for="password" >Hasło</label>
+                <input type="password" name="password" class="form">
+                <label for="password2" class="one">Potwierdź hasło</label>
+                <input type="password" name="password2" class="form">
+            </div>
+            <!-- 
+            1. felxboxy
+            2. dać wszedzie klase display, w sensie na sekcje
+            3, przerobić tego cssa i htmla
+            -->
+            <div class="display two"> 
+                <label for="nick">Nick</label>
+                <input type="text" name="nick" class="form">
+                <div class="profile-picture"></div>
+                <label for="avatar" class="fileContainer two">Zdjęcie profilowe
+                <input type="file" accept="image/x-png,image/gif,image/jpeg" name="avatar" class="avatar">
+                </label>
+            </div>
+            
+            <div>
+                <button class="przycisk cofnij" >cofnij</button>
+                <button class="przycisk dalej">dalej</button>
+            </div>
         </form>
     </section>
     <script src="links/form.js"></script>

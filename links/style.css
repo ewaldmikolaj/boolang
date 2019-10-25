@@ -17,6 +17,8 @@ body {
     background-color: var(--color-background);
 }
 
+/* PANEL NAWIGACYJNY */
+
 #sidebar {
     color: var(--kolor-white);
     position: fixed;
@@ -90,6 +92,8 @@ li .icon {
     transform: rotatey(180deg) rotateX(180deg) translateX(-50px);
 }
 
+/* STRONA GŁÓWNA */
+
 #signIn {
     background-color: var(--color-sea-blue);
     width: 7vw;
@@ -98,6 +102,14 @@ li .icon {
     top: 30px;
     right: 60px;
     border-radius: 30px;
+}
+
+#signUp a {
+    position: absolute;
+    right: 70px;
+    top: 70px;
+    text-decoration: none;
+    font-family: var(--czcionka);
 }
 
 #signIn:hover {
@@ -142,6 +154,8 @@ li .icon {
     margin: 0px 30px 0px 0px;
 }
 
+/* LEWA CZĘŚC REJESTRACJI */
+
 #left {
     height: 100vh;
     width: 50vw;
@@ -164,6 +178,8 @@ li .icon {
     transform: translateX(-50%) translateY(-50%);
 }
 
+/*REJESTRACJA */
+
 #right {
     height: 100vh;
     width: 50vw;
@@ -172,16 +188,19 @@ li .icon {
     position: absolute;
     top: 0px;
     right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
+/*REJESTRACJA: Progress bar */
+
 #progress {
-    position: absolute;
-    left: 25vw;
-    top: 25vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    transform: translateX(-50%) translateY(-50%);
 }
 
 #progress  div:nth-child(odd) {
@@ -194,7 +213,8 @@ li .icon {
 #progress div:nth-child(odd) p {
     text-align: center;
     line-height: 60px;
-    font-size: 2.5vh;
+    font-size: 2.5vh; 
+    /* POCZYTAJ O REM */
     font-family: var(--czcionka);
 }
 
@@ -209,26 +229,54 @@ li .icon {
     background-color: var(--color-yankees-blue);
 }
 
+#right form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    min-height: 300px;
+}
+
 #right form .form {
-    width: 18vw;
-    height: 4vh;
     border-radius: 20px;
     color: black;
     margin-bottom: 43px;
-    padding-left: 10px;
+    border-style: solid;
+    padding: 10px;
 }
 
 label {
     display: block;
 }
 
-#right form {
-    position: absolute;
-    top: 57vh;
-    left: 27vw;
-    transform: translateY(-50%) translateX(-50%);
+#right form div.profile-picture {
+    background-color: grey;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    /* position: absolute; */
 }
 
+.fileContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+.fileContainer [type=file] {
+    cursor: inherit;
+    display: block;
+    font-size: 999px;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
 
 .przycisk {
     width: 12vh;

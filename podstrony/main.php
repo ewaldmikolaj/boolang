@@ -1,5 +1,6 @@
     <section>
     <div id="signIn"><p>Zaloguj się</p></div>
+    <p id="signUp"><a href="signup.php">Zarejestruj się</a></p>
     <article id="welcome">
     <h1 id="title">BooLang</h1>
     <p>Najlepsza strona do nauki technicznego języka obcego</p>
