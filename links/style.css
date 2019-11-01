@@ -340,3 +340,29 @@ label {
 .display {
     display: none;
 }
+
+#animation #animationHide {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 40vh;
+    background-color: var(--color-background);
+    z-index: 1;
+}
+
+#animation img {
+    width: 3vw;
+    position: fixed;
+}
+
+#animation img:nth-of-type(1) {
+    animation: img1 5s infinite linear;
+}
+
+@keyframes img1 {
+    0% { left: 20%; bottom: 20%; transform: rotate(-50deg); }
+    25% { left: 35%; bottom: 38%; transform: rotate(-42deg);}
+    50% { left: 50%; bottom: 50%; transform: rotate(0deg); }
+    75% { left: 75%; bottom: 38%; transform: rotate(42deg);}
+    100% { left: 80%; bottom: 20%;; transform: rotate(50deg); }
+}
