@@ -254,7 +254,6 @@ label {
 }
 
 /* second form */
-
 #right form div div {
     display: flex;
     flex-direction: row;
@@ -340,6 +339,67 @@ label {
 .display {
     display: none;
 }
+
+/* lista fiszek */
+
+#flashcardList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#flashcardList div div {
+    max-height: 60vh;
+}
+
+#flashcardList div:nth-of-type(2) div {
+    overflow: auto;
+}
+
+#flashcardList div div div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 9vh;
+    width: 90vh;
+    background-color: var(--color-white);  
+    margin: 20px; 
+    margin-left: 0px;
+    border-radius: 15px; 
+}
+
+#flashcardList div p:first-child {
+    font-size: 1.5rem;
+    font-family: var(--czcionka);
+    margin-top: 20px;
+}
+
+#flashcardList div div img {            
+    display: block;
+    background-color: grey;
+    margin-left: 10px;
+    width: 3vw;
+    height: 3vw;
+}
+
+
+#flashcardList div div p {
+    color: black;
+    padding: 10px;
+}
+
+#flashcardList div:nth-of-type(2) div::-webkit-scrollbar {
+    background-color: var(--color-background);
+}
+
+#flashcardList div:nth-of-type(2) div::-webkit-scrollbar-thumb {
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+/* animacja */
 
 #animation #animationHide {
     position: fixed;

@@ -8,7 +8,7 @@
             </li>
             <li class="menu">
                 <img class="icon" src="icons/mortarboard.png" alt="learn">
-                <a href="">Nauka</a>
+                <a href="flashcardList.php">Nauka</a>
             </li>
             <li class="menu">
                 <img class="icon" src="icons/friends (1).png" alt="friends">
