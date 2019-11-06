@@ -344,7 +344,7 @@ label {
 
 #flashcardList {
     display: flex;
-    flex-direction: column;
+    flex-direction: rowś;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -354,7 +354,7 @@ label {
     max-height: 60vh;
 }
 
-#flashcardList div:nth-of-type(2) div {
+#flashcardList div:nth-of-type(1) div {
     overflow: auto;
 }
 
@@ -384,17 +384,16 @@ label {
     height: 3vw;
 }
 
-
 #flashcardList div div p {
     color: black;
     padding: 10px;
 }
 
-#flashcardList div:nth-of-type(2) div::-webkit-scrollbar {
+#flashcardList div:nth-of-type(1) div::-webkit-scrollbar {
     background-color: var(--color-background);
 }
 
-#flashcardList div:nth-of-type(2) div::-webkit-scrollbar-thumb {
+#flashcardList div:nth-of-type(1) div::-webkit-scrollbar-thumb {
     background-color: var(--color-white);
     border-radius: 10px;
 }
@@ -425,4 +424,37 @@ label {
     50% { left: 50%; bottom: 50%; transform: rotate(0deg); }
     75% { left: 75%; bottom: 38%; transform: rotate(42deg);}
     100% { left: 80%; bottom: 20%;; transform: rotate(50deg); }
+}
+
+/* strona profilowa */
+
+#profileSite {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: var(--color-white);
+    width: 70vw;
+    height: 80vh;
+    border-radius: 20px;
+    padding: 2%;
+}
+
+#profileSite div:nth-child(1) {
+    border-bottom: 2px solid var(--color-background);
+    height: 15vh;
+}
+
+#profileSite div:nth-child(1) img {
+    display: block;
+    background-color: grey;
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+}
+
+#profileSite div:nth-child(1) p {
+    font-family: var(--czcionka);
+    color: black;
+    font-size: 30px;
 }
