@@ -4,7 +4,7 @@
         <ul>
             <li class="menu">
                 <img class="icon" src="icons/user (1).png" alt="user">
-                <a href="">Mój profil</a>
+                <a href="profileSite.php">Mój profil</a>
             </li>
             <li class="menu">
                 <img class="icon" src="icons/mortarboard.png" alt="learn">

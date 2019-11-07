@@ -431,7 +431,7 @@ label {
 #profileSite {
     position: fixed;
     top: 50vh;
-    left: 50vw;
+    left: 55vw;
     transform: translateX(-50%) translateY(-50%);
     background-color: var(--color-white);
     width: 70vw;
@@ -440,21 +440,60 @@ label {
     padding: 2%;
 }
 
-#profileSite div:nth-child(1) {
+#profileSite > div:nth-child(1) {
     border-bottom: 2px solid var(--color-background);
     height: 15vh;
 }
 
 #profileSite div:nth-child(1) img {
-    display: block;
+    display: inline-block;
+    margin-top: 2vh;
     background-color: grey;
-    border-radius: 100%;
-    width: 130px;
-    height: 130px;
+    border-radius: 50%;
+    width: 6.3vw;
+    height: auto;
+    padding-bottom: 6.3vw;
 }
 
-#profileSite div:nth-child(1) p {
+#profileSite > div:nth-child(1) span {
     font-family: var(--czcionka);
+    position: fixed;
     color: black;
-    font-size: 30px;
+    font-size: 2rem;
+    line-height: 16vh;
+    padding-left: 2vw;
+}
+
+#profileSite > div:nth-child(2) {
+    border-bottom: 2px solid var(--color-background);
+    height: 8vh;
+}
+
+#profileSite > div:nth-child(3) {
+    border-bottom: 2px solid var(--color-background);
+}
+
+#profileSite > div:nth-child(3) > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    min-height: 45vh;
+    padding-top: 2.5vh;
+}
+
+#profileSite > div:nth-child(3) p {
+    margin-top: 2vh;
+    color: black;
+    font-family: var(--czcionka);
+    font-size: 1.7rem;
+}
+
+#profileSite div:nth-child(3) div div {
+    background-color: grey;
+    width: 14vw;
+    height: 8vh;
+    margin: 0 3vw 2vh 0;
 }
