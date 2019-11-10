@@ -348,6 +348,7 @@ label {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    font-family: var(--czcionka);
 }
 
 #flashcardList div div {
@@ -434,8 +435,8 @@ label {
     left: 55vw;
     transform: translateX(-50%) translateY(-50%);
     background-color: var(--color-white);
-    width: 70vw;
-    height: 80vh;
+    width: 65vw;
+    height: 70vh;
     border-radius: 20px;
     padding: 2%;
 }
@@ -469,10 +470,6 @@ label {
     height: 8vh;
 }
 
-#profileSite > div:nth-child(3) {
-    border-bottom: 2px solid var(--color-background);
-}
-
 #profileSite > div:nth-child(3) > div {
     display: flex;
     flex-direction: row;
@@ -480,7 +477,7 @@ label {
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    min-height: 45vh;
+    min-height: 43vh;
     padding-top: 2.5vh;
 }
 
@@ -493,7 +490,101 @@ label {
 
 #profileSite div:nth-child(3) div div {
     background-color: grey;
-    width: 14vw;
+    width: 12vw;
     height: 8vh;
     margin: 0 3vw 2vh 0;
 }
+
+/* ranking */
+
+#ranking {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#standing > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+
+#standing > div:nth-child(1) > div {
+    border: 1x solid var(--color-white);
+    background-color: var(--color-white);
+    margin: 0.5vw;
+    min-height: 30vh;
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#standing > div:nth-child(1) div h2 {
+    color: var(--color-background);
+    font-family: var(--czcionka);
+    margin-top: 2vh;
+    font-size: 1.3rem;
+}
+
+#standing > div:nth-child(1) div p {
+    color: black; 
+    display: block;
+    border-radius: 20px;
+    background-color: lightgrey;
+    padding: 10px;
+    margin: 1vh;
+    font-family: var(--czcionka);
+}
+
+#standing > div:nth-child(1) > div > div {
+    position: relative;
+    width: 6.5vw;
+}
+
+
+#standing > div:nth-child(1) div div img:nth-child(1) {
+    width: 6vw;
+    border-radius: 50%;
+}
+
+#standing > div:nth-child(1) div > div img:nth-child(2) {
+    width: 2vw;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#standing > div:nth-child(2) table {
+    margin: auto;
+    width: 53vw;
+    border-collapse: separate;
+    border-spacing: 0 1vh;
+    font-family: var(--czcionka);
+}
+
+#standing > div:nth-child(2) table tr {
+    background-color: var(--color-white);
+    height: 5.5vh;
+}
+
+#standing > div:nth-child(2) table td {
+    margin-bottom: 15px;
+    color: var(--color-sea-blue);
+    font-weight: 550;
+}
+
+#standing > div:nth-child(2) table td:nth-child(1) {
+    text-align: center;
+    color: lightgray;
+}
+
+#standing > div:nth-child(2) table td:nth-child(3) {
+    text-align: right;
+    padding-right: 60px;
+}
+
+
