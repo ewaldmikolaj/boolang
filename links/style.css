@@ -607,7 +607,7 @@ label {
 #createSet form > h2 {
     font-size: 2rem;
     font-weight: 400;
-    margin-bottom: 2vh;
+    margin-bottom: 20px;
 }
 
 #createSet form div:nth-of-type(1) p {
@@ -629,7 +629,7 @@ label {
 }
 
 #createSet form > div:nth-of-type(2) select {
-    margin: 2vh 2vw 2vh 0;
+    margin: 20px 2vw 20px 0;
     width: 14vw;
     height: 4vh;
     color: black;
@@ -643,6 +643,7 @@ label {
 #createSet form > #overflowSet {
     position: relative;
     overflow: auto;
+    scroll-behavior: smooth;
 }
 
 #createSet form > #overflowSet::-webkit-scrollbar {
@@ -664,7 +665,7 @@ label {
     padding: 10px;
     flex-direction: row;
     align-items: center;
-    margin-top: 5.5vh;
+    margin-top: 50px;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--color-white);
@@ -696,12 +697,24 @@ label {
 
 #createSet form > #addFlashcard {
     align-self: center;
-    margin: 4vh 2vw 0 0;
+    margin: 25px 2vw 0 0;
     display: block;
     border: 2px solid var(--color-white);
     padding: 10px;
     border-radius: 20px;
     background-color: var(--color-sea-blue);
+}
+
+#createSet > form > input[type=submit] {
+    color: black;
+    align-self: flex-end;
+    margin-right: 2vw;
+    background-color: var(--color-white);
+    border: 0;
+    width: 8vw;
+    height: 40px;
+    border-radius: 20px;
+    min-height: 40px;
 }
 
 
