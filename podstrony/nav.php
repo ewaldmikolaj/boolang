@@ -20,7 +20,7 @@
             </li>
             <li class="menu">
                 <img class="icon" src="icons/ranking.png" alt="ranking">
-                <a href="">Ranking</a>
+                <a href="ranking.php">Ranking</a>
             </li>
             <li class="menu">
                 <img class="icon" src="icons/settings.png" alt="settings">

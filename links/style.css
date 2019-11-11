@@ -11,6 +11,7 @@
     padding: 0;
     --czcionka: 'Open Sans' , sans-serif;
     color: var(--color-white);
+    font-family: var(--czcionka);
 }
 
 body {
@@ -29,7 +30,6 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    font-family: var(--czcionka);
     font-weight: 250;
     transition: 1s;
 }
@@ -109,7 +109,6 @@ li .icon {
     right: 70px;
     top: 70px;
     text-decoration: none;
-    font-family: var(--czcionka);
 }
 
 #signIn:hover {
@@ -120,7 +119,6 @@ li .icon {
     display: block;
     text-align: center;
     padding: calc();
-    font-family: var(--czcionka);
     letter-spacing: 2px;
     font-size: 17px;
     line-height: 4vh;
@@ -131,7 +129,6 @@ li .icon {
 #welcome {
     padding-top: 27vh;
     padding-left: 25vw;
-    font-family: var(--czcionka);
     width: 55vw;
 }
 
@@ -161,7 +158,6 @@ li .icon {
     width: 50vw;
     background-color: var(--color-yankees-blue);
     font-size: 60px;
-    font-family: var(--czcionka);
     font-weight: 400;
     line-height: 60px;
 }
@@ -184,7 +180,6 @@ li .icon {
     height: 100vh;
     width: 50vw;
     background-color: var(--color-background);
-    font-family: var(--czcionka);
     position: absolute;
     top: 0px;
     right: 0px;
@@ -216,7 +211,6 @@ li .icon {
     text-align: center;
     line-height: 60px;
     font-size: 2rem; 
-    font-family: var(--czcionka);
 }
 
 #progress div:nth-child(even) {
@@ -342,13 +336,26 @@ label {
 
 /* lista fiszek */
 
+#addFlash {
+    background-color: var(--color-sea-blue);
+    width: 7vw;
+    font-weight: 300;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    text-align: center; 
+    padding: 10px; 
+    text-decoration: none;  
+}
+
 #flashcardList {
     display: flex;
     flex-direction: rowś;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    font-family: var(--czcionka);
 }
 
 #flashcardList div div {
@@ -373,7 +380,6 @@ label {
 
 #flashcardList div p:first-child {
     font-size: 1.5rem;
-    font-family: var(--czcionka);
     margin-top: 20px;
 }
 
@@ -457,7 +463,6 @@ label {
 }
 
 #profileSite > div:nth-child(1) span {
-    font-family: var(--czcionka);
     position: fixed;
     color: black;
     font-size: 2rem;
@@ -484,7 +489,6 @@ label {
 #profileSite > div:nth-child(3) p {
     margin-top: 2vh;
     color: black;
-    font-family: var(--czcionka);
     font-size: 1.7rem;
 }
 
@@ -524,7 +528,6 @@ label {
 
 #standing > div:nth-child(1) div h2 {
     color: var(--color-background);
-    font-family: var(--czcionka);
     margin-top: 2vh;
     font-size: 1.3rem;
 }
@@ -536,7 +539,6 @@ label {
     background-color: lightgrey;
     padding: 10px;
     margin: 1vh;
-    font-family: var(--czcionka);
 }
 
 #standing > div:nth-child(1) > div > div {
@@ -562,8 +564,7 @@ label {
     margin: auto;
     width: 53vw;
     border-collapse: separate;
-    border-spacing: 0 1vh;
-    font-family: var(--czcionka);
+    border-spacing: 0px 1vh;
 }
 
 #standing > div:nth-child(2) table tr {
@@ -577,14 +578,132 @@ label {
     font-weight: 550;
 }
 
-#standing > div:nth-child(2) table td:nth-child(1) {
+#standing > div:nth-child(2) table td:nth-of-type(1) {
     text-align: center;
     color: lightgray;
 }
 
-#standing > div:nth-child(2) table td:nth-child(3) {
+#standing > div:nth-child(2) table td:nth-of-type(3) {
     text-align: right;
     padding-right: 60px;
 }
+
+/* dodawanie fiszek */
+
+#createSet {
+    position: absolute;
+    top: 45vh;
+    left: 55vw;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#createSet form {
+    display: flex;
+    flex-direction: column;
+    width: 49vw;
+    max-height: 70vh;
+}
+
+#createSet form > h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2vh;
+}
+
+#createSet form div:nth-of-type(1) p {
+    font-size: 1.2rem;
+}
+
+#createSet form > div:nth-of-type(1) input {
+    color: black;
+    width: 20vw;
+    height: 3vh;
+    padding: 5px;
+    background-color: var(--color-background);
+    border: 0;
+    border-bottom: 2px solid var(--color-white);
+}
+
+#createSet form > div:nth-of-type(1) input:focus {
+    outline: none;
+}
+
+#createSet form > div:nth-of-type(2) select {
+    margin: 2vh 2vw 2vh 0;
+    width: 14vw;
+    height: 4vh;
+    color: black;
+    border: 0;
+}
+
+#createSet form div:nth-of-type(2) select option {
+    color: black;
+}
+
+#createSet form > #overflowSet {
+    position: relative;
+    overflow: auto;
+}
+
+#createSet form > #overflowSet::-webkit-scrollbar {
+    background-color: var(--color-background);
+    width: 10px;
+}
+
+#createSet form > #overflowSet::-webkit-scrollbar-thumb {
+    background-color: var(--color-white);
+    border-radius: 20px;
+}
+
+
+#createSet form > #overflowSet div.flashcard {
+    color: black;
+    width: 45.4vw;
+    height: 12vh;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5.5vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--color-white);
+}
+
+#createSet form > #overflowSet div.flashcard > div.position {
+    width: 30vw;
+    color: var(--color-yankees-blue);
+}
+
+#createSet form > #overflowSet div.flashcard > div > input {
+    width: 16vw;
+    border: 0;
+    background-color: var(--color-white);
+    border-bottom: 2px solid var(--color-background);
+    color: black;
+    font-size: 1.2rem;
+}
+
+#createSet form > #overflowSet div.flashcard > div > input:focus {
+    outline: none;
+}
+
+#createSet form > #overflowSet div.flashcard > div > label {
+    color: var(--color-lapis);
+    margin-top: 3px;
+    font-size: 1.1rem;
+}
+
+#createSet form > #addFlashcard {
+    align-self: center;
+    margin: 4vh 2vw 0 0;
+    display: block;
+    border: 2px solid var(--color-white);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--color-sea-blue);
+}
+
+
 
 

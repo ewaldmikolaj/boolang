@@ -1,3 +1,4 @@
+    <a href="../flashcard.html" id="addFlash">Dodaj zestaw</a>
     <div id="flashcardList">
         <div>
             <p>Wszystkie fiszki</p>
