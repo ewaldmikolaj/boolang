@@ -7,23 +7,29 @@
                 <input type="text" name="title" id="setTitle" placeholder="Nazwa zestawu">
             </div>
             <div>
-                <select name="languageSet" id="languageSet">
-                    <option value="" hidden disabled selected>Wybierz język</option>
-                    <option value="angielski">angielski</option>
-                    <option value="niemiecki">niemiecki</option>
-                    <option value="francuski">francuski</option>
-                </select>
-                <select name="professionSet" id="professionSet">
-                    <option value="" hidden disabled selected>Wybierz zawód</option>
-                    <option value="informatyk">informatyk</option>
-                    <option value="mechanik">mechanik</option>
-                    <option value="elektronik">elektronik</option>
-                </select>
-                <select name="edition" id="edition">
-                    <option value="" hidden disabled selected>Uprawnienia</option>
-                    <option value="onlyMe">Tylko ja</option>
-                    <option value="friends">Znajomi</option>
-                </select>
+                <div class="customSelect">
+                    <select name="languageSet" id="languageSet">
+                        <option value="" hidden disabled selected>Wybierz język</option>
+                        <option value="angielski">angielski</option>
+                        <option value="niemiecki">niemiecki</option>
+                        <option value="francuski">francuski</option>
+                    </select>
+                </div>
+                <div class="customSelect">
+                    <select name="professionSet" id="professionSet">
+                        <option value="" hidden disabled selected>Wybierz zawód</option>
+                        <option value="informatyk">informatyk</option>
+                        <option value="mechanik">mechanik</option>
+                        <option value="elektronik">elektronik</option>
+                    </select>
+                </div>
+                <div class="customSelect">
+                    <select name="edition" id="edition">
+                        <option value="" hidden disabled selected>Uprawnienia</option>
+                        <option value="onlyMe">Tylko ja</option>
+                        <option value="friends">Znajomi</option>
+                    </select>
+                </div>
             </div>
             <div id="overflowSet">
                 <div class="flashcard">
@@ -52,4 +58,3 @@
             <p id="addFlashcard">Dodaj fiszkę</p>
         </form>
     </section>
-    <script src="../links/addFlashcard.js"></script>

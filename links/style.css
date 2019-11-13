@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 :root {
     --color-white: #E8F1F2;
     --color-background: #1B98E0;
@@ -524,6 +525,7 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 #standing > div:nth-child(1) div h2 {
@@ -628,15 +630,44 @@ label {
     outline: none;
 }
 
-#createSet form > div:nth-of-type(2) select {
-    margin: 20px 2vw 20px 0;
-    width: 14vw;
-    height: 4vh;
-    color: black;
-    border: 0;
+#createSet form > div:nth-of-type(1) input::placeholder {
+    color: var(--color-white);
+    opacity: 0.6;
 }
 
-#createSet form div:nth-of-type(2) select option {
+div.customSelect {
+    display: inline-block;
+    width: 14vw;
+    height: 4vh;
+    margin: 20px 2vw 20px 0;
+    position: relative;
+}
+
+#createSet form > div:nth-of-type(2) > div.customSelect select {
+    width: 14vw;
+    height: 4vh;
+    color: var(--color-yankees-blue);
+    border: 0;
+    background-color: var(--color-white);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+div.customSelect:after {
+   content: 'keyboard_arrow_down'; 
+   font-family: 'material icons';
+   position: absolute;
+   font-size: 1.2rem;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 1vw;
+   color: var(--color-sea-blue);
+}
+
+#createSet form div:nth-of-type(2) > div.customSelect select option {
     color: black;
 }
 
@@ -669,6 +700,7 @@ label {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--color-white);
+    border-radius: 10px;
 }
 
 #createSet form > #overflowSet div.flashcard > div.position {
@@ -716,6 +748,117 @@ label {
     border-radius: 20px;
     min-height: 40px;
 }
+
+/* lista znajomych */
+
+#friendsList {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    min-width: 50vw;
+}
+
+#friendsList > form > div.customSelect select {
+    width: 14vw;
+    height: 4vh;
+    box-sizing: border-box;
+    background-color: var(--color-background);
+    border: 0;
+    padding: 8px;
+    border-bottom: 2px solid var(--color-white);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 0.9rem;
+}
+
+#friendsList > form > div.customSelect select:focus {
+    outline: none;
+}
+
+#friendsList > form > div.customSelect select option {
+    background-color: var(--color-background);
+}
+
+#friendsList > form > input {
+    box-sizing: border-box;
+    width: 30vw;
+    height: 4vh;
+    border: 0;
+    border-bottom: 2px solid var(--color-white);
+    background-color: var(--color-background);
+    font-size: 0.9rem;
+}
+
+#friendsList > form > input:focus {
+    outline: none;
+}
+
+#friendsList > form > input::placeholder {
+    color: var(--color-white);
+    opacity: 0.7;
+}
+
+#friendsList > form > table {
+    width: 44.5vw;
+    border-collapse: separate;
+    border-spacing: 0 1.5vh;
+    font-size: 0.9rem;
+}
+
+#friendsList > form > table tr {
+    height: 3vh;
+    margin-bottom: 10px;
+    background-color: var(--color-white);
+}
+
+#friendsList > form > table tr td {
+    color: var(--color-yankees-blue);
+    padding: 6px 10px 6px 10px;
+    position: relative;
+}
+
+#friendsList > form > table td:first-child {
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+
+#friendsList > form > table td:last-child {
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+#friendsList > form > table tr td p {
+    color: var(--color-yankees-blue);
+}
+
+#friendsList > form > table tr > td:nth-of-type(1) {
+    width: 15vw;
+}
+
+#friendsList > form > table tr > td:nth-of-type(2) {
+    text-align: center;
+}
+
+#friendsList > form > table tr > td:nth-of-type(3) {
+    text-align: left;
+    width: 13vw;
+}
+
+#friendsList > form > table tr td p:nth-of-type(1) {
+    line-height: 3vh;
+}
+
+#friendsList > form > table tr td p:nth-of-type(2) {
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 1px;
+    opacity: 0.7;
+}
+
 
 
 
