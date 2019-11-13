@@ -304,11 +304,10 @@ label {
 }
 
 .three textarea {
-    width: 18vw;
+    width: 16vw;
     height: 10vh;
     resize: none;
     color: black;
-    padding: 3px;
     background-color: var(--color-white);
 }
 
@@ -665,6 +664,7 @@ div.customSelect:after {
    transform: translateY(-50%);
    right: 1vw;
    color: var(--color-sea-blue);
+   translate: 1s;
 }
 
 #createSet form div:nth-of-type(2) > div.customSelect select option {
@@ -781,6 +781,8 @@ div.customSelect:after {
 
 #friendsList > form > div.customSelect select option {
     background-color: var(--color-background);
+    font-size: 0.9rem;
+    line-height: 200%;
 }
 
 #friendsList > form > input {
