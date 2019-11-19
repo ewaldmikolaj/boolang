@@ -12,11 +12,11 @@
             </li>
             <li class="menu">
                 <img class="icon" src="icons/friends (1).png" alt="friends">
-                <a href="">Znajomi</a>
+                <a href="friendsList.php">Znajomi</a>
             </li>
             <li class="menu">
                 <img class="icon" src="icons/seminar.png" alt="classes">
-                <a href="">Klasy</a>
+                <a href="groupSite.php">Klasy</a>
             </li>
             <li class="menu">
                 <img class="icon" src="icons/ranking.png" alt="ranking">

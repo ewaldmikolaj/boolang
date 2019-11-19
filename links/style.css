@@ -754,7 +754,7 @@ div.customSelect:after {
 #friendsList {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 55%;
     transform: translateX(-50%) translateY(-50%);
     display: flex;
     flex-direction: row;
@@ -781,13 +781,13 @@ div.customSelect:after {
 
 #friendsList > form > div.customSelect select option {
     background-color: var(--color-background);
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 200%;
 }
 
 #friendsList > form > input {
     box-sizing: border-box;
-    width: 30vw;
+    width: 33vw;
     height: 4vh;
     border: 0;
     border-bottom: 2px solid var(--color-white);
@@ -805,14 +805,14 @@ div.customSelect:after {
 }
 
 #friendsList > form > table {
-    width: 44.5vw;
+    width: 47.5vw;
     border-collapse: separate;
     border-spacing: 0 1.5vh;
     font-size: 0.9rem;
 }
 
 #friendsList > form > table tr {
-    height: 3vh;
+    height: 3.3vh;
     margin-bottom: 10px;
     background-color: var(--color-white);
 }
@@ -851,17 +851,189 @@ div.customSelect:after {
 }
 
 #friendsList > form > table tr td p:nth-of-type(1) {
-    line-height: 3vh;
+    line-height: 3.3vh;
 }
 
 #friendsList > form > table tr td p:nth-of-type(2) {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     position: absolute;
     bottom: 1px;
     opacity: 0.7;
 }
 
+/* fiszki - ogladanie */
 
+#learn {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 46vw;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.mainCard {
+    width: 40vw;
+    height: 35vh;
+    border: 1px solid #CCC;
+    perspective: 1000px;
+  }
+  
+.card {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+.card_rotate {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: var(--color-sea-blue);
+    text-align: center;
+    backface-visibility: hidden;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 34vh;
+    background-color: var(--color-white);
+}
+
+.back {
+    transform: rotateX(180deg);
+}
+
+.card.rotate {
+    transform: rotateX(180deg);
+}
+
+#learn img {
+    width: 3vw;
+}
+
+.ghostClass {
+    animation: ghostDiv 0.3s linear;
+    animation-fill-mode: forwards;
+}
+
+.divHide {
+    display: none;
+}
+
+@keyframes ghostDiv {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; transform: translateY(30px); }
+    100% { opacity: 0; transform: translateY(60px); visibility: hidden; }
+}
+
+#learn h2 {
+    align-self: flex-start;
+}
+
+#learn p {
+    color: var(--color-white);
+    margin: 30px 0 60px 0; 
+    align-self: flex-start;
+    font-size: 1.3rem;
+}
+
+/* klasy */
+
+#group {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 62vw;
+    height: 72vh;
+    border-radius: 20px;
+    background-color: var(--color-white);
+    display: grid;
+    grid-template-columns: 47vw 15vw;
+    grid-template-rows: 2vh 6vh 62vh 2vh;
+}
+
+#group > h2 {
+    grid-column: 1;
+    grid-row: 1;
+    color: var(--color-yankees-blue);
+    font-size: 2.2rem;
+    height: 4vh;
+    width: 62vw;
+    margin: 20px 0 0 30px;
+    font-weight: 500;
+}
+
+#group #groupList {
+    width: 47vw;
+    height: 62vh;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+#groupList::-webkit-scrollbar, #groupMembers::-webkit-scrollbar {
+    width: 0;
+}
+
+#groupList > div > span {
+    line-height: 10vh;
+    margin-left: 30px;
+    font-size: 1rem;
+}
+
+#group #groupMembers {
+    width: 15vw;
+    height: 68vh;
+    grid-row: 2/3;
+    grid-column: 2;
+    border-left: 3px solid var(--color-yankees-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#group #groupList > div {
+    background-color: var(--color-sea-blue);
+    width: 45vw;
+    min-height: 10vh;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#group #groupMembers > div {
+    width: 13vw;
+    min-height: 6vh;
+}
+
+#group #groupMembers > div:nth-child(1) {
+    margin-top: 8vh;
+}
+
+#group #groupMembers > div > img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: grey;
+    vertical-align: middle;
+}
+
+#group #groupMembers > div > span {
+    line-height: 40px;
+    margin-left: 4px;
+    color: var(--color-yankees-blue);
+    vertical-align: middle;
+}
 
 
 
