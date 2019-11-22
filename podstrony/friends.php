@@ -12,7 +12,27 @@
             <tr>
                 <td>
                     <p>Mikołaj Ewald</p>
-                    <p>BooBoo</p>
+                </td>
+                <td>300 punktów</td>
+                <td>aktywny 1 dzień temu</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Mikołaj Ewald</p>
+                </td>
+                <td>300 punktów</td>
+                <td>aktywny 123 dzień temu</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Mikołaj Ewald</p>
+                </td>
+                <td>300 punktów</td>
+                <td>aktywny 90 dzień temu</td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Mikołaj Ewald</p>
                 </td>
                 <td>300 punktów</td>
                 <td>ostatnio aktywny 1 dzień temu</td>
@@ -20,31 +40,6 @@
             <tr>
                 <td>
                     <p>Mikołaj Ewald</p>
-                    <p>BoooBooo</p>
-                </td>
-                <td>300 punktów</td>
-                <td>ostatnio aktywny 123 dzień temu</td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Mikołaj Ewald</p>
-                    <p>BoooBooo</p>
-                </td>
-                <td>300 punktów</td>
-                <td>ostatnio aktywny 90 dzień temu</td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Mikołaj Ewald</p>
-                    <p>BOOOOOOO</p>
-                </td>
-                <td>300 punktów</td>
-                <td>ostatnio aktywny 1 dzień temu</td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Mikołaj Ewald</p>
-                    <p>BOOOOOOO</p>
                 </td>
                 <td>300 punktów</td>
                 <td>ostatnio aktywny 12 dzień temu</td>
@@ -52,23 +47,20 @@
             <tr>
                 <td>
                     <p>Mikołaj Ewald</p>
-                    <p>BoooBooo</p>
                 </td>
                 <td>300 punktów</td>
-                <td>ostatnio aktywny 1234 dzień temu</td>
+                <td>aktywny 1234 dzień temu</td>
             </tr>
             <tr>
                 <td>
                     <p>Mikołaj Ewald</p>
-                    <p>BOOOOOOO</p>
                 </td>
                 <td>300 punktów</td>
-                <td>ostatnio aktywny 1 dzień temu</td>
+                <td>aktywny 1 dzień temu</td>
             </tr>
             <tr>
                 <td>
                     <p>Mikołaj Ewald</p>
-                    <p>BOOOOOOO</p>
                 </td>
                 <td>300 punktów</td>
                 <td>ostatnio aktywny 4 dzień temu</td>
@@ -76,15 +68,13 @@
             <tr>
                 <td>
                     <p>Mikołaj Ewald</p>
-                    <p>BOOOOOOO</p>
                 </td>
                 <td></td>
-                <td>ostatnio aktywny 1 dzień temu</td>
+                <td>aktywny 1 dzień temu</td>
             </tr>
             <tr>
                 <td>
                     <p>BARDZO DUZE dluga dluga nazwa</p>
-                    <p>BOOOOOOO</p>
                 </td>
                 <td></td>
                 <td>ostatnio aktywny 12 dzień temu</td>
@@ -92,10 +82,9 @@
             <tr>
                 <td>
                     <p>BARDZO DUZE dluga dluga nazwa</p>
-                    <p>BOOOOOOO</p>
                 </td>
                 <td>300 punktów</td>
-                <td>ostatnio aktywny 56 dzień temu</td>
+                <td>aktywny 56 dzień temu</td>
             </tr>
         </table>
     </form>

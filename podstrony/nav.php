@@ -24,9 +24,9 @@
             </li>
             <li class="menu">
                 <img class="icon" src="icons/settings.png" alt="settings">
-                <a href="">Ustawienia</a>
+                <a href="settingsmain.php">Ustawienia</a>
             </li>
         </ul>
-        <img id="logo" src="icons/g3796.png" alt="logo">
+        <a href="index.php" id="indexLogo"><img id="logo" src="icons/g3796.png" alt="logo"></a>
         <script src="links/script.js"></script>
     </nav>

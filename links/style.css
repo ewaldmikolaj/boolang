@@ -77,7 +77,12 @@ li .icon {
     padding-right: 7px;
 }
 
-#sidebar #logo {
+#indexLogo {
+    display: block;
+    margin: auto auto 40px auto;
+}
+
+#sidebar #indexLogo #logo {
     height: 50px;
     width: 50px;
     display: block;
@@ -304,11 +309,12 @@ label {
 }
 
 .three textarea {
-    width: 16vw;
+    width: 18vw;
     height: 10vh;
     resize: none;
     color: black;
     background-color: var(--color-white);
+    border: 0;
 }
 
 /* buttons */
@@ -547,7 +553,6 @@ label {
     width: 6.5vw;
 }
 
-
 #standing > div:nth-child(1) div div img:nth-child(1) {
     width: 6vw;
     border-radius: 50%;
@@ -564,8 +569,9 @@ label {
 #standing > div:nth-child(2) table {
     margin: auto;
     width: 53vw;
+    max-width: 53vw;
     border-collapse: separate;
-    border-spacing: 0px 1vh;
+    border-spacing: 0 1vh;
 }
 
 #standing > div:nth-child(2) table tr {
@@ -806,6 +812,7 @@ div.customSelect:after {
 
 #friendsList > form > table {
     width: 47.5vw;
+    max-width: 47.5vw;
     border-collapse: separate;
     border-spacing: 0 1.5vh;
     font-size: 0.9rem;
@@ -848,19 +855,12 @@ div.customSelect:after {
 #friendsList > form > table tr > td:nth-of-type(3) {
     text-align: left;
     width: 13vw;
+    max-width: 13vw;
 }
 
 #friendsList > form > table tr td p:nth-of-type(1) {
     line-height: 3.3vh;
 }
-
-#friendsList > form > table tr td p:nth-of-type(2) {
-    font-size: 0.6rem;
-    position: absolute;
-    bottom: 1px;
-    opacity: 0.7;
-}
-
 /* fiszki - ogladanie */
 
 #learn {    
@@ -1035,5 +1035,108 @@ div.customSelect:after {
     vertical-align: middle;
 }
 
+/* ustawienia */
 
+#settings {
+    width: 60vw;
+    height: 70vh;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%) translateX(-50%);
+    border-radius: 20px;
+}
 
+#formSettings {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+#formSettings h2 {
+    font-size: 1.6rem;
+    color: var(--color-yankees-blue);
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+#formSettings input {
+    width: 20vw;
+    height: 4.2vh;
+    border-radius: 20px;
+    border: 0;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    color: var(--color-yankees-blue);
+}
+
+#formSettings label {
+    color: var(--color-yankees-blue);
+    margin-bottom: 7px;
+    font-size: 1.1rem;
+}
+
+#formSettings textarea {
+    width: 19.5vw;
+    height: 8vh;
+    resize: none;
+    border: 0;
+    padding: 10px;
+    color: var(--color-yankees-blue);
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+#settAvatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#settAvatar img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+#settAvatar div {
+    line-height: 80px;
+    position: relative;
+    margin-left: 10px;
+}
+
+#settAvatar div input[type=file] {
+    width: 8vh;
+    color: transparent;
+}
+
+#settAvatar div input::before {
+    content: 'wybierz plik';
+    color: var(--color-white);
+    position: absolute;
+    top: 25px;
+    left: -1px;
+    line-height: 4vh;
+    background-color: var(--color-sea-blue);
+    width: 8vw;
+    height: 4vh;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#formSettings input[type=text]:focus, #formSettings input[type=file]:focus, #formSettings textarea:focus {
+    outline: none;
+}
+
+#formSettings input[type=submit] {
+    align-self: flex-end;
+    width: 10vw;
+    height: 4vh;
+    font-size: 1.2rem;
+    margin: 90px 50px 0 0;
+    color: var(--color-white);
+    background-color: var(--color-sea-blue);
+}
