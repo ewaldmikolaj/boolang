@@ -13,6 +13,6 @@
                     <input type="file">
                 </div>
             </div>
-            <input type="submit" value="Zapisz zmiany">
+            <input type="submit" value="Zapisz">
         </form>
 </section>

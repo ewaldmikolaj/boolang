@@ -74,7 +74,7 @@
     #profileSite {
         top: 52%;;
         left: 50%;
-        width: 16em;
+        width: 18em;
         height: 32em;
     }
 
@@ -274,6 +274,51 @@
         padding-right: 10px;
     }
 
-    
+    /* ustawienia */
+
+    #settings {
+        left: 50%;
+        width: 18em;
+        height: 31em;
+    }
+
+    #formSettings {
+        padding: 20px;
+    }
+
+    #formSettings input {
+        width: 18em;
+        height: 2em;
+    }
+
+    #formSettings label {
+        font-size: 1rem;
+    }
+
+    #formSettings textarea {
+        width: 17em;
+        margin-bottom: 30px;
+    }
+
+    #settAvatar img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #settAvatar div {
+        line-height: 60px;
+    }
+
+    #settAvatar div input::before {
+        width: 6em;
+    }
+
+    #formSettings input[type=submit] {
+        margin: 40px auto;
+        width: 15em;
+        font-size: 1rem;
+        padding: 3px;
+        height: 2em;
+    }
 
 }

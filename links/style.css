@@ -1026,6 +1026,10 @@ div.customSelect:after {
     color: transparent;
 }
 
+#settAvatar div input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
 #settAvatar div input::before {
     content: 'wybierz plik';
     color: var(--color-white);
@@ -1049,9 +1053,10 @@ div.customSelect:after {
     width: 10vw;
     height: 4vh;
     font-size: 1.2rem;
-    margin: 90px 50px 0 0;
+    margin: 70px 45px 0 0;
     color: var(--color-white);
     background-color: var(--color-sea-blue);
+    padding: 5px;
 }
 
 /* fiszki - ogladanie */
