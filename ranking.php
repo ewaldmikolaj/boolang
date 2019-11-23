@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BooLang | Ranking</title>
     <link rel="stylesheet" href="links/style.css">
+    <link rel="stylesheet" href="links/media.css">
 </head>
 <body>
     <?php

@@ -1,4 +1,6 @@
 @media (max-width: 599px) {
+    /* główna */
+    
     #title {
         font-size: 2rem;
         margin-top: 52%;
@@ -32,13 +34,16 @@
         z-index: -1;
     }
 
+    /* sidebard */
+
     #sidebar {
         width: 100%;
+        z-index: 4;;
     }
 
     #avatar {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 
     .hide {
@@ -59,8 +64,214 @@
     }
 
     #sidebar #indexLogo #logo{
-        height: 40px;
-        width: 40px;
+        height: 50px;
+        width: 50px;
         margin: auto auto 10px auto;
     }
+
+    /* profileSite */
+
+    #profileSite {
+        top: 52%;;
+        left: 50%;
+        width: 16em;
+        height: 32em;
+    }
+
+    #profileSite div:nth-child(1) {
+        height: 4.5em;
+    }
+
+    #profileSite div:nth-child(1) img {
+        width: 50px;
+        height: 50px;
+        padding-bottom: 0;
+    }
+
+    #profileSite > div:nth-child(1) span {
+        font-size: 1rem;
+        line-height: 4.7em;
+    }
+
+    #profileSite > div:nth-child(3) > div {
+        flex-direction: column;
+    }
+
+    #profileSite > div:nth-child(3) p {
+        font-size: 1.2rem;
+    }
+
+    #profileSite > div:nth-child(3) div div {
+        width: 16em;
+    }
+
+    /* zle zrobiona lista fiszek xd */
+
+    #flashcardList {
+        left: 53%;
+    }
+    
+    #flashcardList div div div {
+        width: 19em;
+    }
+
+    #flashcardList > div:nth-of-type(1) {
+        height: 30em;
+    }
+
+    #flashcardList div:nth-of-type(1) > div {
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 40em;
+    }
+
+    #flashcardList div:nth-of-type(1) div::-webkit-scrollbar {
+        width: 0;
+    }    
+
+    #flashcardList div div img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #flashcardList div div {
+        max-height: 86vh;
+    }
+
+    #addFlash {
+        z-index: 1;
+        top: auto;
+        bottom: 30px;
+        width: 5em;
+        font-size: 0.9rem;
+        line-height: 1em;
+        padding: 5px;
+        right: 30px;
+    }
+
+    /* klasy */
+
+    #group {
+        top: 52%;
+        left: 50%;
+        width: 18em;
+        height: 32em;
+        grid-template-columns: 80% 20%;
+    }
+
+    #group > h2 {
+        font-size: 1.5rem;
+    }
+
+    #group #groupList {
+        height: 29.5em;
+        width: 15em;
+    }
+
+    #group #groupList > div {
+        width: 13em;
+        min-height: 3em;
+        height: 3em;
+    }
+
+    #groupList > div > span {
+        line-height: 3em;
+    }
+
+    #group #groupMembers {
+        width: 3.4em;
+        height: 31.3em;
+        border-left: 2px solid #13293D;
+    }
+
+    #group #groupMembers > div {
+        margin-bottom: 10px;
+    }
+
+    #group #groupMembers > div > span {
+        display: none;
+    }
+
+    /* ranking */
+
+    #ranking {
+        left: 50%;
+    }
+
+    #standing > div:nth-child(1) {
+        flex-wrap: wrap;
+    }
+
+    #standing > div:nth-child(1) > div {
+        width: 18em;
+        min-height: 1em;
+        height: 2.8em;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #standing > div:nth-child(1) div h2 {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 0;
+    }
+
+    #standing > div:nth-child(1) div p {
+        padding: 3px;
+        font-size: 0.8rem;
+        width: 4em;
+        text-align: center;
+        background-color: #E8F1F2;
+    }
+
+    #standing > div:nth-child(1) > div > div {
+        width: 50px;
+    }
+
+    #standing > div:nth-child(1) > div:nth-child(2) > div,
+    #standing > div:nth-child(1) > div:nth-child(3) > div {
+        width: 42px;
+        margin-top: 0.2em;
+    }
+
+    #standing > div:nth-child(1) div div img:nth-child(1) {
+        width: 44px;
+    }
+
+    #standing > div:nth-child(1) div div img:nth-child(2) {
+        width: 20px;
+    }
+
+    #standing > div:nth-child(1) div:nth-child(2) div img:nth-child(1),
+    #standing > div:nth-child(1) div:nth-child(3) div img:nth-child(1) {
+        width: 34px;
+    }
+
+    #standing > div:nth-child(1) div:nth-child(2) div img:nth-child(2),
+    #standing > div:nth-child(1) div:nth-child(3) div img:nth-child(2) {
+        width: 18px;
+    }
+
+    #standing > div:nth-child(1) > div:nth-child(1) {
+        width: 18em;
+        height: 4.2em;
+    }
+
+    #standing > div:nth-child(2) table {
+        width: 18em;
+        max-width: 18em;
+    }
+
+    #standing > div:nth-child(2) table tr {
+        height: 2.3em;
+    }
+    
+    #standing > div:nth-child(2) table td {
+        font-weight: 400;
+    }
+
+    #standing > div:nth-child(2) table td:nth-of-type(3) {
+        padding-right: 10px;
+    }
+
 }

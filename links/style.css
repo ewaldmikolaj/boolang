@@ -414,40 +414,12 @@ label {
     border-radius: 10px;
 }
 
-/* animacja */
-
-#animation #animationHide {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    height: 40vh;
-    background-color: var(--color-background);
-    z-index: 1;
-}
-
-#animation img {
-    width: 3vw;
-    position: fixed;
-}
-
-#animation img:nth-of-type(1) {
-    animation: img1 5s infinite linear;
-}
-
-@keyframes img1 {
-    0% { left: 20%; bottom: 20%; transform: rotate(-50deg); }
-    25% { left: 35%; bottom: 38%; transform: rotate(-42deg);}
-    50% { left: 50%; bottom: 50%; transform: rotate(0deg); }
-    75% { left: 75%; bottom: 38%; transform: rotate(42deg);}
-    100% { left: 80%; bottom: 20%;; transform: rotate(50deg); }
-}
-
 /* strona profilowa */
 
 #profileSite {
     position: fixed;
-    top: 50vh;
-    left: 55vw;
+    top: 50%;
+    left: 55%;
     transform: translateX(-50%) translateY(-50%);
     background-color: var(--color-white);
     width: 65vw;
@@ -497,15 +469,16 @@ label {
 
 #profileSite > div:nth-child(3) p {
     margin-top: 2vh;
-    color: black;
+    color: var(--color-yankees-blue);
     font-size: 1.7rem;
 }
 
 #profileSite div:nth-child(3) div div {
-    background-color: grey;
+    background-color: var(--color-sea-blue);
     width: 12vw;
     height: 8vh;
     margin: 0 3vw 2vh 0;
+    border-radius: 10px;
 }
 
 /* ranking */
@@ -543,7 +516,7 @@ label {
 }
 
 #standing > div:nth-child(1) div p {
-    color: black; 
+    color: var(--color-yankees-blue); 
     display: block;
     border-radius: 20px;
     background-color: lightgrey;
@@ -586,6 +559,22 @@ label {
     margin-bottom: 15px;
     color: var(--color-sea-blue);
     font-weight: 550;
+}
+
+#standing > div:nth-child(2) table td:first-child {
+    border-top-left-radius: 10px;
+}
+
+#standing > div:nth-child(2) table td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+#standing > div:nth-child(2) table td:last-child {
+    border-top-right-radius: 10px;
+}
+
+#standing > div:nth-child(2) table td:last-child {
+    border-bottom-right-radius: 10px;
 }
 
 #standing > div:nth-child(2) table td:nth-of-type(1) {
@@ -877,8 +866,8 @@ div.customSelect:after {
     border-radius: 20px;
     background-color: var(--color-white);
     display: grid;
-    grid-template-columns: 47vw 15vw;
-    grid-template-rows: 2vh 6vh 62vh 2vh;
+    grid-template-columns: 78% 22%;
+    grid-template-rows: 2% 6% auto 2%;
 }
 
 #group > h2 {
