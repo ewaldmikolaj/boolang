@@ -124,9 +124,8 @@ li .icon {
 #signIn > p {
     display: block;
     text-align: center;
-    padding: calc();
     letter-spacing: 2px;
-    font-size: 17px;
+    font-size: 1rem;
     line-height: 4vh;
     font-weight: 550;
     color: var(--color-yankees-blue);
@@ -358,10 +357,14 @@ label {
 
 #flashcardList {
     display: flex;
-    flex-direction: rowś;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 #flashcardList div div {
@@ -861,85 +864,6 @@ div.customSelect:after {
 #friendsList > form > table tr td p:nth-of-type(1) {
     line-height: 3.3vh;
 }
-/* fiszki - ogladanie */
-
-#learn {    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 46vw;
-    margin: auto;
-    margin-top: 100px;
-}
-
-.mainCard {
-    width: 40vw;
-    height: 35vh;
-    border: 1px solid #CCC;
-    perspective: 1000px;
-  }
-  
-.card {
-    width: 100%;
-    height: 100%;
-    transition: 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-  }
-  
-.card_rotate {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    line-height: 260px;
-    color: var(--color-sea-blue);
-    text-align: center;
-    backface-visibility: hidden;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 34vh;
-    background-color: var(--color-white);
-}
-
-.back {
-    transform: rotateX(180deg);
-}
-
-.card.rotate {
-    transform: rotateX(180deg);
-}
-
-#learn img {
-    width: 3vw;
-}
-
-.ghostClass {
-    animation: ghostDiv 0.3s linear;
-    animation-fill-mode: forwards;
-}
-
-.divHide {
-    display: none;
-}
-
-@keyframes ghostDiv {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; transform: translateY(30px); }
-    100% { opacity: 0; transform: translateY(60px); visibility: hidden; }
-}
-
-#learn h2 {
-    align-self: flex-start;
-}
-
-#learn p {
-    color: var(--color-white);
-    margin: 30px 0 60px 0; 
-    align-self: flex-start;
-    font-size: 1.3rem;
-}
 
 /* klasy */
 
@@ -1140,3 +1064,71 @@ div.customSelect:after {
     color: var(--color-white);
     background-color: var(--color-sea-blue);
 }
+
+/* fiszki - ogladanie */
+
+#learn {    
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    width: 50vw;
+    margin: auto;
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#learn > p {
+    margin-bottom: 30px;
+}
+
+div.flashLearn {
+    background-color: var(--color-white);
+    width: 50vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 30px auto 20px;
+    grid-template-rows: 16vh 1.6rem auto 6vh 30px;
+    border-radius: 20px;
+}
+
+div.flashLearn > p {
+    color: var(--color-yankees-blue);
+    font-size: 1.5rem;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+div.flashLearn form {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+div.flashLearn form input {
+    width: 40vw;
+    height: 4vh;
+    border: 0;
+    color: var(--color-yankees-blue);
+    background-color: var(--color-white);
+    border-bottom: 2px solid var(--color-background);
+    font-size: 1rem;
+}
+
+div.flashLearn form input:focus {
+    outline: none;
+}
+
+div.flashLearn form button {
+    width: 5vw;
+    height: 4vh;
+    border-radius: 20px;
+    border: 0;
+    background-color: var(--color-sea-blue);
+    margin-right: 10px;
+}
+
+div.flashLearn form button:focus {
+    outline: none;
+}
+ 

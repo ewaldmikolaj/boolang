@@ -1,27 +1,18 @@
-const flashcard = document.querySelectorAll(".card");
-var i = 2;
-var j = 1;
-flashcard[i].addEventListener("click", () => {
-    flashcard[i].classList.toggle("rotate");
-});
+let tabPL = ["stolik", "krzesło", "komputer"];
+let tabENG = ["table", "chair", "computer"];
+let i = 0;
 
-const flashcard2 = document.querySelectorAll(".mainCard");
-const progress = document.querySelector("#learn p");
-const button = document.querySelector("#learn img");
-button.addEventListener("click", () => {
-    if (i > 0) {
-        flashcard2[i].classList.add("ghostClass");
-        j++;
-    }
-    setTimeout( function() {
-        if (i > 0) {
-        flashcard2[i].remove();
-        --i;
-        flashcard2[i].classList.remove("divHide");
-        }
-    }, 500);
-    progress.innerHTML = `Postęp: ${j}/3`;
-});
+let wordPL = document.querySelector(".word");
+wordPL.innerHTML = tabPL[i];
+const button = document.querySelector(".flashLearn > form button");
+button.addEventListener("click", (e) => {
+    e.preventDefault();
+    let value = document.querySelector(".wordValue").value;
+    if (i < 2) i++;
+    wordPL.innerHTML = tabPL[i];
+
+})
+
 
 
 

@@ -3,37 +3,53 @@
         <div>
             <p>Wszystkie fiszki</p>
             <div>
-                <div>
-                    <img src="" alt="">
-                    <p>Nazwa zestawu</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Nazwa zestawu</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Nazwa zestawu</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Nazwa zestawu</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Nazwa zestawu</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Nazwa zestawu</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Nazwa zestawu</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p>Nazwa zestawu</p>
-                </div>
+                <a href="learn.php">
+                    <div>
+                        <img src="" alt="">
+                        <p>Nazwa zestawu</p>
+                    </div>
+                </a>
+                <a href="learn.php">
+                    <div>
+                        <img src="" alt="">
+                        <p>Nazwa zestawu</p>
+                    </div>
+                </a>
+                <a href="learn.php">
+                    <div>
+                        <img src="" alt="">
+                        <p>Nazwa zestawu</p>
+                    </div>
+                </a>
+                <a href="learn.php">
+                    <div>
+                        <img src="" alt="">
+                        <p>Nazwa zestawu</p>
+                    </div>
+                </a>
+                <a href="learn.php">
+                    <div>
+                        <img src="" alt="">
+                        <p>Nazwa zestawu</p>
+                    </div>
+                </a>
+                <a href="learn.php">
+                    <div>
+                        <img src="" alt="">
+                        <p>Nazwa zestawu</p>
+                    </div>
+                </a>
+                <a href="learn.php">
+                    <div>
+                        <img src="" alt="">
+                        <p>Nazwa zestawu</p>
+                    </div>
+                </a>
+                <a href="learn.php">                
+                    <div>
+                        <img src="" alt="">
+                        <p>Nazwa zestawu</p>
+                    </div>
+                </a>
             </div>
     </div>
