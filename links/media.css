@@ -1,0 +1,66 @@
+@media (max-width: 599px) {
+    #title {
+        font-size: 2rem;
+        margin-top: 52%;
+    }
+
+    #welcome > p {
+        display: none;
+    }
+
+    .job {
+        display: none;
+    }
+
+    #signIn {
+        width: 6.5em;
+        height: 2em;
+        top: 15px;
+        right: 15px;
+        z-index: -1;
+    }
+
+    #signIn > p {
+        font-size: 0.85rem;
+        line-height: 2.2em;
+    }
+
+    #signUp a {
+        top: 44px;
+        right: 15px;
+        font-size: 0.9rem;
+        z-index: -1;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    #avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hide {
+        transform: translateX(-100%);
+    }
+
+    li {
+        line-height: 20px;
+    }
+
+    li > a {
+        font-size: 1.3rem;
+    }
+
+    li .icon {
+        height: 20px;
+        width: auto;
+    }
+
+    #sidebar #indexLogo #logo{
+        height: 40px;
+        width: 40px;
+        margin: auto auto 10px auto;
+    }
+}
