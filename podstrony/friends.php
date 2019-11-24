@@ -74,17 +74,10 @@
             </tr>
             <tr>
                 <td>
-                    <p>BARDZO DUZE dluga dluga nazwa</p>
+                    <p>Mikołaj Ewald</p>
                 </td>
                 <td></td>
-                <td>ostatnio aktywny 12 dzień temu</td>
-            </tr>
-            <tr>
-                <td>
-                    <p>BARDZO DUZE dluga dluga nazwa</p>
-                </td>
-                <td>300 punktów</td>
-                <td>aktywny 56 dzień temu</td>
+                <td>aktywny 1 dzień temu</td>
             </tr>
         </table>
     </form>

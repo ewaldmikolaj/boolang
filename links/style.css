@@ -653,6 +653,10 @@ div.customSelect {
     border-radius: 10px;
 }
 
+#createSet form > div:nth-of-type(2) > div.customSelect select:focus {
+    outline: none;
+}
+
 div.customSelect:after {
    content: 'keyboard_arrow_down'; 
    font-family: 'material icons';
