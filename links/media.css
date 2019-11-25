@@ -1,4 +1,4 @@
-@media (orientation: portrait) and (max-width: 599px) {
+@media (max-width: 599px) {
     /* główna */
     
     #title {
@@ -76,6 +76,10 @@
         height: 32em;
     }
 
+    #profileSite > div:nth-child(2) {
+        height: 2.6em;
+    }
+
     #profileSite div:nth-child(1) {
         height: 4.5em;
     }
@@ -101,16 +105,20 @@
 
     #profileSite > div:nth-child(3) div div {
         width: 18em;
+        height: 2.6em;
     }
 
     /* zle zrobiona lista fiszek xd */
 
     #flashcardList {
+        top: 45%;
         left: 53%;
+        width: auto;
     }
     
     #flashcardList div div div {
-        width: 19em;
+        width: 18em;
+        margin: 13px 18px 0px auto;
     }
 
     #flashcardList > div:nth-of-type(1) {
@@ -125,10 +133,6 @@
 
     #flashcardList div:nth-of-type(1) div::-webkit-scrollbar {
         width: 0;
-    }  
-    
-    #flashcardList div div div {
-        margin: 13px 20px 0px 0px;
     }
 
     #flashcardList div div img {
@@ -286,6 +290,7 @@
 
     #formSettings {
         padding: 20px;
+        padding-bottom: 0px;
     }
 
     #formSettings input {
@@ -316,7 +321,7 @@
     }
 
     #formSettings input[type=submit] {
-        margin: 40px auto;
+        margin: 15px auto;
         width: 15em;
         font-size: 1rem;
         padding: 3px;
@@ -372,11 +377,11 @@
     }
 
     #friendsList > form > table tr > td:nth-of-type(1) {
-        width: 6em;
+        width: 9em;
     }
 
     #friendsList > form > table tr > td:nth-of-type(2) {
-        width: 5em;
+        width: 7em;
     }
 
     #friendsList > form > table tr > td:nth-of-type(3) {
@@ -497,6 +502,12 @@
 
     /* rejestracji */
 
+    #right {
+        top: 45%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
     #left {
         display: none;
     }
@@ -590,5 +601,136 @@
         text-align: center;
         padding: 0;
     }
+
+}
+
+@media (min-device-height: 700px) and (max-device-height:1000px) {
+
+    #profileSite {
+        top: 50%;
+        left: 50%;
+        width: 20em;
+        height: 40em;
+    }
+
+    #profileSite > div:nth-child(2) {
+        height: 2.8em;
+    }
+
+    #profileSite div:nth-child(1) {
+        height: 5em;
+    }
+
+    #profileSite div:nth-child(1) img {
+        width: 60px;
+        height: 60px;
+        padding-bottom: 0;
+    }
+
+    #profileSite > div:nth-child(1) span {
+        font-size: 1.1rem;
+        line-height: 5.2em;
+    }
+
+    #profileSite > div:nth-child(3) div div {
+        width: 20em;
+        height: 2.6em;
+    } 
+
+    /* klasy */ 
+
+    #group {
+        width: 22em;
+        height: 40em;
+    }
+
+    #group #groupList {
+        height: 40.5em;
+        width: 17.8em;
+    }
+
+    #group #groupList > div {
+        width: 16em;
+    }
+
+    #group #groupMembers {
+        height: 38em;
+        width: 4em;
+    } 
+
+    /* ranking */
+
+    #standing > div:nth-child(1) > div {
+        width: 22em;
+    }
+
+    #standing > div:nth-child(1) > div:nth-child(1) {
+        width: 22em;
+    }
+
+    #standing > div:nth-child(2) table {
+        width: 22em;
+        max-width: 22em;
+    }
+
+    /* ustawienia */
+
+    #settings {
+        width: 22em;
+        height: 39em;
+    }
+
+    #formSettings input {
+        width: 22em;
+    }
+
+    #formSettings textarea {
+        width: 21em;
+    }
+
+    #settAvatar img {
+        width: 70px;
+        height: 70px;
+    }
+
+    #settAvatar div {
+        line-height: 70px;
+    }
+
+    #formSettings input[type=submit] {
+        margin: 90px auto;
+        width: 19em;
+    }
+
+    /* lista fiszek */
+
+    #flashcardList {
+        top: 40%;
+    }
+    
+    #flashcardList div div img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #flashcardList div div div {
+        width: 22em;
+    }
+
+    /* nauka */
+
+    #learn {
+        width: 22em;
+    }
+
+    div.flashLearn {
+        width: 22em;
+        height: 30em;
+    }
+
+    div.flashLearn form input {
+        width: 13em;
+    }
+
 
 }
