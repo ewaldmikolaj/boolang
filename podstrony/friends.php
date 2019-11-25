@@ -1,12 +1,14 @@
 <section id="friendsList">
     <form method="">
-        <input type="text" name="friendName" placeholder="Szukaj znajomego">
-        <div class="customSelect">
-            <select name="friendType">
-                <option value="" hidden disabled selected>Szukaj wśród:</option>
-                <option value="friend">Twoi znajomi</option>
-                <option value="user">Użytkownicy</option>
-            </select>
+        <div class="friendsTop">
+            <input type="text" name="friendName" placeholder="Szukaj znajomego">
+            <div class="customSelect">
+                <select name="friendType">
+                    <option value="" hidden disabled selected>Szukaj wśród:</option>
+                    <option value="friend">Twoi znajomi</option>
+                    <option value="user">Użytkownicy</option>
+                </select>
+            </div>
         </div>
         <table>
             <tr>

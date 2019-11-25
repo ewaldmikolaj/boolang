@@ -19,7 +19,6 @@
         height: 2em;
         top: 15px;
         right: 15px;
-        z-index: -1;
     }
 
     #signIn > p {
@@ -31,7 +30,6 @@
         top: 44px;
         right: 20px;
         font-size: 0.9rem;
-        z-index: -1;
     }
 
     /* sidebard */
@@ -343,18 +341,24 @@
         height: 33em;
     }
 
-    #friendsList > form > input {
+    #friendsList > form > .friendsTop {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    #friendsList > form > .friendsTop > input {
         width: 12em;
         height: 2em;
     }
 
-    #friendsList > form > div.customSelect select {
+    #friendsList > form > .friendsTop > div.customSelect select {
         height: 2em;
         width: 8em;
         padding: 0;
     }
 
-    #friendsList div.customSelect::after {
+    #friendsList > form > .friendsTop > div.customSelect::after {
         display: none;
     }
 
@@ -437,7 +441,7 @@
 
     #createSet div.customSelect {
         margin: 15px 0 0 0;
-        width: 16em;
+        width: 17em;
     }
 
     #createSet form > div:nth-of-type(2) > div.customSelect select {
@@ -446,7 +450,7 @@
     }
 
     #createSet div.customSelect:after {
-        right: 1px;
+        right: 10px;
     }
 
     #createSet form > #overflowSet div.flashcard {
@@ -477,7 +481,9 @@
     }
 
     #createSet form > #addFlashcard {
-        margin: 5px auto 0 auto;
+        margin: 5px 7em 0 auto;
+        padding: 5px;
+        font-size: 0.9rem;
     }
 
     #createSet > form > input[type=submit] {
@@ -487,6 +493,102 @@
         min-height: 2em;
         top: -30px;
         right: 3px;
+    }
+
+    /* rejestracji */
+
+    #left {
+        display: none;
+    }
+
+    #right {
+        width: 20em;
+        height: 33em;
+    }
+
+    #progress div:nth-child(odd) {
+        width: 45px;
+        height: 45px;
+    }
+
+    #progress {
+        top: 6em
+    }
+
+    #progress div:nth-child(odd) p {
+        font-size: 1.4rem;
+        line-height: 45px;
+    }
+
+    #progress div:nth-child(even) {
+        width: 50px;
+        height: 7px;
+    }
+
+    #right form {
+        margin-top: 150px;
+    }
+
+    #right form input[type=text], input[type=password] {
+        width: 17em;
+        margin-bottom: 24px;
+    }
+
+    #right form div.profile-picture {
+        width: 50px;
+        height: 50px;
+    }
+
+    .przycisk {
+        width: 5em;
+        height: 2.5em;
+    }
+
+    .dalej, .send {
+        margin: 3vh 1vw auto 6em;
+    }
+
+    .three select {
+        width: 17em;
+        border-radius: 10px;
+        height: 2.5em;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding: 1px;
+        font-size: 0.9rem;
+    }
+
+    .three label:nth-of-type(2) {
+        margin-top: 20px;
+    }
+
+    .three textarea {
+        width: 18.5em;
+        height: 5em;
+    }
+
+    .two {
+        max-width: 15em;
+    }
+
+    .two input[type=text] {
+        margin-left: auto;
+        width: 16em;
+    }
+
+    #right form div div {
+        flex-wrap: wrap;
+        max-width: 17em;
+    }
+
+    .fileContainer {
+        margin-top: 10px;
+        width: 15em;
+        height: 2.5em;
+        line-height: 2.5em;
+        text-align: center;
+        padding: 0;
     }
 
 }

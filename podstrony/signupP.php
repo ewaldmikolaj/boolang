@@ -18,7 +18,7 @@
 
         <div class="two display "> 
             <label for="nick">Nick</label>
-            <input type="text" name="nick">
+            <input type="text" name="nick" placeholder="podaj nick">
             <div>
                 <div class="profile-picture"></div>
                     <label for="avatar" class="fileContainer two">Wybierz zdjęcie profilowe
@@ -30,6 +30,7 @@
         <div class="three display">
             <label for="language">Wybierz język</label>
             <select name="language">
+                <option value="" hidden disabled selected>Wybierz język</option>
                 <option value="English">Angielski</option>
                 <option value="German">Niemiecki</option>
                 <option value="French">Francuski</option>
