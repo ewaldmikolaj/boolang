@@ -34,18 +34,9 @@
 
     /* sidebard */
 
-    #sidebar {
-        width: 100%;
-        z-index: 4;;
-    }
-
     #avatar {
         width: 60px;
         height: 60px;
-    }
-
-    .hide {
-        transform: translateX(-100%);
     }
 
     li {
@@ -61,7 +52,7 @@
         width: auto;
     }
 
-    #sidebar #indexLogo #logo{
+    #sidebar #indexLogo #logo {
         height: 50px;
         width: 50px;
         margin: auto auto 10px auto;
@@ -71,7 +62,6 @@
 
     #profileSite {
         top: 52%;;
-        left: 50%;
         width: 18em;
         height: 32em;
     }
@@ -87,16 +77,11 @@
     #profileSite div:nth-child(1) img {
         width: 50px;
         height: 50px;
-        padding-bottom: 0;
     }
 
     #profileSite > div:nth-child(1) span {
         font-size: 1rem;
         line-height: 4.7em;
-    }
-
-    #profileSite > div:nth-child(3) > div {
-        flex-direction: column;
     }
 
     #profileSite > div:nth-child(3) p {
@@ -121,20 +106,6 @@
         margin: 13px 18px 0px auto;
     }
 
-    #flashcardList > div:nth-of-type(1) {
-        height: 30em;
-    }
-
-    #flashcardList div:nth-of-type(1) > div {
-        overflow: scroll;
-        overflow-x: hidden;
-        height: 40em;
-    }
-
-    #flashcardList div:nth-of-type(1) div::-webkit-scrollbar {
-        width: 0;
-    }
-
     #flashcardList div div img {
         width: 30px;
         height: 30px;
@@ -145,14 +116,9 @@
     }
 
     #addFlash {
-        z-index: 1;
-        top: auto;
-        bottom: 30px;
         width: 5em;
         font-size: 0.9rem;
         line-height: 1em;
-        padding: 5px;
-        right: 30px;
     }
 
     /* klasy */
@@ -199,10 +165,6 @@
     }
 
     /* ranking */
-
-    #ranking {
-        left: 50%;
-    }
 
     #standing > div:nth-child(1) {
         flex-wrap: wrap;
@@ -330,41 +292,14 @@
 
     /* friends list */
 
-    #friendsList {
-        min-width: 20em;
-        left: 50%;
-        min-width: auto;
-        overflow: scroll;
-        overflow-x: hidden;
-    }
-
-    #friendsList::-webkit-scrollbar {
-        width: 0;
-    }
 
     #friendsList > form {
         height: 33em;
     }
 
-    #friendsList > form > .friendsTop {
-        position: sticky;
-        top: 0;
-        z-index: 2;
-    }
-
     #friendsList > form > .friendsTop > input {
         width: 12em;
         height: 2em;
-    }
-
-    #friendsList > form > .friendsTop > div.customSelect select {
-        height: 2em;
-        width: 8em;
-        padding: 0;
-    }
-
-    #friendsList > form > .friendsTop > div.customSelect::after {
-        display: none;
     }
 
     #friendsList > form > table {
@@ -384,15 +319,9 @@
         width: 7em;
     }
 
-    #friendsList > form > table tr > td:nth-of-type(3) {
-        min-width: 2em;
-        font-size: 0rem;
-    }
-
     /* nauka */
 
     #learn {
-        left: 50%;
         top: 50%;
         width: 18em;
     }
@@ -414,7 +343,6 @@
 
     #createSet {
         top: 50%;
-        left: 50%;
     }
 
     #createSet form {
@@ -504,7 +432,6 @@
 
     #right {
         top: 45%;
-        left: 50%;
         transform: translateX(-50%) translateY(-50%);
     }
 
@@ -604,11 +531,10 @@
 
 }
 
-@media (min-device-height: 700px) and (max-device-height:1000px) {
+@media (min-height: 700px) and (max-height:1000px) and (max-width: 992px) {
 
     #profileSite {
         top: 50%;
-        left: 50%;
         width: 20em;
         height: 40em;
     }
@@ -731,6 +657,327 @@
     div.flashLearn form input {
         width: 13em;
     }
+
+    /*dodawanie fiszek */
+
+    #createSet form {
+        width: 22em;
+    }
+
+    #createSet form > div:nth-of-type(1) input {
+        width: 25em;
+    }
+
+    #createSet form > div:nth-of-type(2) {
+        width: 22em;
+    }
+
+    #createSet div.customSelect {
+        width: 22em;
+    }
+
+    #createSet form > div:nth-of-type(2) > div.customSelect select {
+        width: 26em;
+    }
+
+    #createSet form > #overflowSet div.flashcard {
+        width: 20.5em;
+    }
+
+    #createSet form > #overflowSet div.flashcard > div > input {
+        width: 20em;
+    }
+
+    #createSet form > #addFlashcard {
+        margin: 8px 8em 0 auto;
+    }
+
+    #friendsList > form > .friendsTop > input {
+        width: 16em;
+    }
+
+    #friendsList > form > table {
+        width: 24em;
+        min-width: 24em;
+    }
+
+    #friendsList > form > .friendsTop > div.customSelect select {
+        height: 2.1em;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 992px) {
+    /* główna */
+    #welcome > p {
+        font-size: 1.6rem;
+    }
+
+    .job {
+        width: 80px;
+        height: auto;
+    }
+
+    #signIn {
+        width: 11em;
+    }
+
+    #signIn > p {
+        font-size: 1.2rem;
+    }
+
+    #signUp a {
+        font-size: 1.2rem;
+        right: 80px;
+    }
+
+    /* sidebar */
+
+    #avatar {
+        width: 140px;
+        height: 140px;
+    }
+
+    li {
+        line-height: 33px;
+    }
+
+    li > a {
+        font-size: 1.9rem;
+    }
+
+    li .icon {
+        height: 33px;
+        width: auto;
+    }
+
+    #sidebar #indexLogo #logo {
+        height: 70px;
+        width: 70px;
+    }
+
+    /*profileSite */
+
+    #profileSite {
+        width: 40em;
+        height: 42em;
+    }
+
+    #profileSite > div:nth-child(2) {
+        height: 3em;
+    }
+
+    #profileSite div:nth-child(1) {
+        height: 8em;
+    }
+
+    #profileSite div:nth-child(1) img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #profileSite > div:nth-child(1) span {
+        font-size: 2rem;
+        line-height: 4.2em
+    }
+
+    #profileSite > div:nth-child(3) p {
+        font-size: 1.9rem;
+    }
+
+    #profileSite > div:nth-child(3) div div {
+        width: 40em;
+        height: 2.9em;
+    }
+
+    /* lista fiszek xd */
+
+    #flashcardList {
+        top: 40%;
+        left: 50%;
+        width: auto;
+    }
+    
+    #flashcardList div div div {
+        width: 40em;
+        margin: 13px 18px 0px auto;
+    }
+
+    #flashcardList div div img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #addFlash {
+        bottom: 50px;
+        width: 6em;
+        font-size: 1.4rem;
+        line-height: 1em;
+    }
+
+    #flashcardList div div img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* friends list */
+
+    #friendsList > form {
+        height: 38em;
+    }
+
+    #friendsList > form > table {
+        width: 50em;
+        max-width: 50em;
+    }
+
+    #friendsList > form > .friendsTop > input {
+        width: 40em;
+    }
+
+    #friendsList > form > .friendsTop > div.customSelect select {
+        width: 9em;
+        height: 2.8em !important;
+    }
+
+    /* klasy */
+
+    #group {
+        width: 45em;
+        height: 43em;
+    }
+
+    #group #groupList {
+        height: 40em;
+        width: 35em;
+    }
+
+    #group #groupList > div {
+        width: 30em;
+    }
+
+    #group #groupMembers {
+        height: 42em;
+        width: 10em;
+    } 
+
+    #group #groupMembers > div {
+        width: 10em;
+    }
+
+    #group #groupMembers > div:nth-child(1) {
+        margin-top: 4em;
+    }
+
+    /* ranking */
+
+    #standing > div:nth-child(1) > div {
+        width: 12em;
+    }
+
+    #standing > div:nth-child(1) > div {
+        font-size: 1.2rem;
+    }
+
+    #standing > div:nth-child(1) div p {
+        margin-top: 2em;
+    }
+
+    #standing > div:nth-child(1) > div > div {
+        width: 5.2em;
+    }
+
+    #standing > div:nth-child(1) div div img:nth-child(1) {
+        width: 5em;
+    }
+
+    #standing > div:nth-child(1) div > div img:nth-child(2) {
+        width: 2em;
+    }
+
+    #standing > div:nth-child(2) table {
+        width: 44em;
+        max-width: 44em;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    
+    #sidebar {
+        width: 100%;
+        z-index: 4;
+    }
+
+    .hide {
+        transform: translateX(-100%);
+    }
+
+    #profileSite, #friendsList, #learn, #createSet, #right, #group, #ranking {
+        left: 50%;
+    }
+
+    #profileSite div:nth-child(1) img {
+        padding-bottom: 0px;
+    }
+
+    #profileSite > div:nth-child(3) > div {
+        flex-direction: column;
+    }
+
+    #flashcardList div:nth-of-type(1) div::-webkit-scrollbar {
+        width: 0;
+    }
+
+    #flashcardList > div:nth-of-type(1) {
+        height: 30em;
+    }
+
+    #flashcardList div:nth-of-type(1) > div {
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 40em;
+    }
+
+    #addFlash {
+        z-index: 1;
+        bottom: 30px;
+        right: 30px;
+        top: auto;
+    }
+
+    #friendsList {
+        min-width: auto;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    #friendsList::-webkit-scrollbar {
+        width: 0;
+    }
+
+    #friendsList > form > .friendsTop {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    #friendsList > form > .friendsTop > div.customSelect::after {
+        display: none;
+    }
+
+    #friendsList > form > .friendsTop > div.customSelect select {
+        height: 2em;
+        width: 8em;
+        padding: 0;
+    }
+
+    #friendsList > form > table tr > td:nth-of-type(3) {
+        min-width: 2em;
+        font-size: 0rem;
+    }
+
+
 
 
 }
