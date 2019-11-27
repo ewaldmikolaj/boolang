@@ -341,13 +341,7 @@
 
     /* dodawanie fiszek */
 
-    #createSet {
-        top: 50%;
-    }
-
     #createSet form {
-        flex-direction: row;
-        flex-wrap: wrap;
         width: 18em;
         max-height: 30em;
     }
@@ -433,10 +427,6 @@
     #right {
         top: 45%;
         transform: translateX(-50%) translateY(-50%);
-    }
-
-    #left {
-        display: none;
     }
 
     #right {
@@ -706,7 +696,7 @@
     }
 }
 
-@media (min-width: 600px) and (max-width: 992px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     /* główna */
     #welcome > p {
         font-size: 1.6rem;
@@ -793,8 +783,6 @@
 
     #flashcardList {
         top: 40%;
-        left: 50%;
-        width: auto;
     }
     
     #flashcardList div div div {
@@ -872,9 +860,6 @@
 
     #standing > div:nth-child(1) > div {
         width: 12em;
-    }
-
-    #standing > div:nth-child(1) > div {
         font-size: 1.2rem;
     }
 
@@ -899,10 +884,357 @@
         max-width: 44em;
     }
 
+    /* ustawienia */
+
+    #settings {
+        width: 42em;
+    }
+
+    #formSettings input {
+        width: 42em;
+    }
+
+    #formSettings textarea {
+        width: 41em;
+    }
+
+    /* nauka */
+
+    #learn {
+        width: 42em;
+    }
+
+    div.flashLearn {
+        width: 42em;
+    }    
+
+    div.flashLearn form input {
+        width: 30em;
+    }
+
+    div.flashLearn form button {
+        width: 6em;
+    }
+
+    /* dodawanie */ 
+
+    #createSet form {
+        width: 32em;
+    }
+
+    #createSet form > div:nth-of-type(1) input {
+        width: 36em;
+    }
+
+    #createSet form > div:nth-of-type(2) {
+        width: 35em;
+    }
+
+    #createSet div.customSelect {
+        margin: 25px 0 0 0;
+        width: 10em;
+    }
+
+    #createSet form > div:nth-of-type(2) > div.customSelect select {
+        width: 12em;
+    }
+
+    #createSet form > #overflowSet div.flashcard {
+        width: 29em;
+    }
+
+    #createSet form > #overflowSet div.flashcard > div.position {
+        width: 30em;
+    }
+
+    #createSet form > #overflowSet div.flashcard > div > input {
+        width: 10em;
+    }
+
+    #createSet form > #addFlashcard {
+        margin: 25px auto 0 auto;
+    }
+
+    #createSet > form > input[type=submit] {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        width: 6em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+
+    #welcome > p {
+        font-size: 2rem;
+    }
+
+    .job {
+        width: 100px;
+        height: auto;
+    }
+
+    #signUp a {
+        font-size: 1.4rem;
+        right: 75px;
+        top: 80px;
+    }
+
+    #profileSite {
+        width: 50em;
+        height: 60em;
+    }    
+
+    #profileSite div:nth-child(1) {
+        height: 10em;
+    }
+
+    #profileSite > div:nth-child(1) span {
+        line-height: 4.8em;
+    }
+
+    #profileSite > div:nth-child(3) div div {
+        width: 50em;
+        height: 3.2em;
+    }
+
+    #flashcardList div div div {
+        width: 55em;
+    }
+
+    #flashcardList div div img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #addFlash {
+        font-size: 2rem;
+    }
+
+    #flashcardList div div p {
+        font-size: 2rem;
+    }
+
+    #flashcardList div p:first-child {
+        font-size: 2.5rem;
+    }
+
+    #friendsList > form {
+        height: 60em;
+    } 
+
+    #friendsList > form > table {
+        width: 55em;
+        max-width: 55em;
+    }
+
+    #friendsList > form > table tr {
+        height: 5em;
+    }
+
+    #friendsList > form > table tr td {
+        padding: 3px 5px 3px 5px;
+        font-size: 1.3rem;
+    }
+
+    #friendsList > form > .friendsTop > input {
+        width: 30em;
+        font-size: 1.3rem;
+        height: 4em;
+        padding: 0;
+    }
+
+    #friendsList > form > .friendsTop > div.customSelect select {
+        width: 9em;
+        height: 4em !important;
+        font-size: 1.3rem;
+    }
+
+    #arrow {
+        height: 50px;
+        width: 50px;
+        right: 5px;
+    }
+
+    .rotate {
+        transition: 0.7s;
+        transform: rotatey(180deg) rotateX(180deg) translateX(-60px);
+    }
+
+    #group {
+        width: 59em;
+        height: 60em;
+    }
+
+    #group #groupList {
+        height: 55em;
+        width: 46em;
+    }
+
+    #group #groupList > div {
+        width: 42em;
+    }
+
+    #groupList > div > span {
+        font-size: 1.8em;
+    }
+
+    #group #groupMembers {
+        height: 58em;
+        width: 13em;
+    } 
+
+    #group #groupMembers > div > span {
+        font-size: 1rem;
+    }
+
+    #standing > div:nth-child(1) > div {
+        width: 13em;
+        font-size: 1.5rem;
+    }
+
+    #standing > div:nth-child(2) table {
+        width: 38em;
+        max-width: 37.5em;
+        font-size: 1.6rem;
+    }
+
+    #formSettings h2 {
+        font-size: 2.5rem;
+    }
+
+    #settings {
+        width: 56em;
+    }
+
+    #formSettings input {
+        width: 25em;
+        font-size: 2rem;
+    }
+
+    #formSettings textarea {
+        width: 24.5em;
+        font-size: 2rem;
+    }
+    
+    #formSettings label {
+        font-size: 2rem;
+    }
+
+    #settAvatar div input::before {
+        width: 10em;
+        font-size: 1.5rem;
+    }
+
+    #settAvatar img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #learn {
+        width: 58em;
+    }
+
+    #learn h2 {
+        font-size: 2.6rem;
+    }
+
+    #learn > p {
+        font-size: 2rem;
+    }
+
+    div.flashLearn > p {
+        font-size: 3rem;
+    }
+
+    div.flashLearn {
+        width: 58em;
+    }
+
+    div.flashLearn form input {
+        font-size: 2rem;
+        width: 21em;
+    }
+
+    div.flashLearn form button {
+        font-size: 1.7rem;
+    }
+
+    #createSet form {
+        width: 51em;
+    }
+
+    #createSet form h2 {
+        font-size: 2.7rem;
+    }
+
+    #createSet form div:nth-of-type(1) p {
+        font-size: 2rem;
+    }
+
+    #createSet form > div:nth-of-type(1) input {
+        width: 25em;
+        font-size: 2rem;
+        
+    }
+
+    #createSet form > div:nth-of-type(2) {
+        width: 60em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #createSet div.customSelect {
+        width: 50.2em;
+        margin: 25px 0 0 0;
+    }
+
+    #createSet div.customSelect::after {
+        right: 1px;
+        font-size: 2.1rem;
+    }
+
+    #createSet form > div:nth-of-type(2) > div.customSelect select {
+        width: 28.2em;
+        font-size: 1.8rem;
+    }
+
+    #createSet form > div:nth-of-type(2) > div.customSelect select option {
+        font-size: 1.2rem;
+        width: 30em;
+        max-width: 30em;
+        text-overflow: ellipsis;
+    } 
+    
+    #createSet form > #overflowSet div.flashcard {
+        width: 49.5em;
+    }
+
+    #createSet form > #overflowSet div.flashcard > div.position {
+        width: 40em;
+        font-size: 1.5rem;
+    }
+
+    #createSet form > #overflowSet div.flashcard > div > input {
+        font-size: 1.7rem;
+    }
+
+    #createSet form > #overflowSet div.flashcard > div > label {
+        font-size: 1.5rem;
+    }
+
+    #createSet form > #addFlashcard {
+        font-size: 1.6rem;
+    }
+
+    #createSet > form > input[type=submit] {
+        font-size: 1.6rem;
+    }
 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     
     #sidebar {
         width: 100%;
@@ -913,7 +1245,7 @@
         transform: translateX(-100%);
     }
 
-    #profileSite, #friendsList, #learn, #createSet, #right, #group, #ranking {
+    #flashcardList, #profileSite, #friendsList, #learn, #createSet, #right, #group, #ranking, #settings {
         left: 50%;
     }
 
@@ -977,7 +1309,21 @@
         font-size: 0rem;
     }
 
+    #left {
+        display: none;
+    }
 
+    #createSet {
+        top: 50%;
+    }
 
+    #createSet form {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #flashcardList {
+        width: auto;
+    }
 
 }
