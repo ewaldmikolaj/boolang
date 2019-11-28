@@ -1,5 +1,5 @@
     <section>
-    <div id="signIn"><p>Zaloguj się</p></div>
+    <a href="signSite.php"><div id="signIn"><p>Zaloguj się</p></div></a>
     <p id="signUp"><a href="signup.php">Zarejestruj się</a></p>
     <article id="welcome">
     <h1 id="title">BooLang</h1>

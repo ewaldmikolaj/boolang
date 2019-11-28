@@ -427,9 +427,6 @@
     #right {
         top: 45%;
         transform: translateX(-50%) translateY(-50%);
-    }
-
-    #right {
         width: 20em;
         height: 33em;
     }
@@ -457,7 +454,8 @@
         margin-top: 150px;
     }
 
-    #right form input[type=text], input[type=password] {
+    #right form input[type=text], 
+    #right form input[type=password] {
         width: 17em;
         margin-bottom: 24px;
     }
@@ -517,6 +515,30 @@
         line-height: 2.5em;
         text-align: center;
         padding: 0;
+    }
+
+    #signinPanel {
+        height: 20em;
+        width: 18em;
+    }
+
+    #signinPanel form {
+        width: 15em;
+        height: 20em;
+    }
+
+    #signinPanel form p {
+        color: var(--color-yankees-blue);
+        font-size: 1.3rem;
+    }
+    
+    #signinPanel form input {
+        width: 12em;
+        font-size: 1.4rem;
+    }
+
+    #signinPanel form input[type=submit] {
+        margin-top: 50px;
     }
 
 }
@@ -961,6 +983,56 @@
         right: 20px;
         width: 6em;
     }
+
+    #right {
+        left: 25%;
+    }
+    
+    #progress div:nth-child(odd) {
+        width: 80px;
+        height: 80px;
+    }
+
+    #progress div:nth-child(odd) p {
+        font-size: 2rem;
+        line-height: 80px;
+    }
+
+    #progress div:nth-child(even) {
+        width: 140px;
+        height: 10px;
+    }
+
+    #right form input[type=text], 
+    #right form input[type=password] {
+        width: 20em;
+        margin-bottom: 24px;
+        font-size: 1.3rem;
+    }
+
+    .przycisk {
+        font-size: 1.6rem;
+        width: 6em;
+    }
+    
+    #right label {
+        font-size: 1.2rem;
+    }
+
+    #right form div.profile-picture {
+        height: 100px;
+        width: 100px;
+    }
+
+    .three select {
+        width: 22em;
+        font-size: 1.3rem;
+    } 
+    
+    .three textarea {
+        font-size: 1.2rem;
+        width: 24em;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -1232,6 +1304,84 @@
         font-size: 1.6rem;
     }
 
+    #right {
+        left: 25%;
+    }
+    
+    #progress div:nth-child(odd) {
+        width: 110px;
+        height: 110px;
+    }
+
+    #progress div:nth-child(odd) p {
+        font-size: 3rem;
+        line-height: 110px;
+    }
+
+    #progress div:nth-child(even) {
+        width: 140px;
+        height: 15px;
+    }
+
+    #right form input[type=text], 
+    #right form input[type=password] {
+        width: 17em;
+        margin-bottom: 24px;
+        font-size: 2rem;
+    }
+
+    .przycisk {
+        font-size: 2rem;
+        width: 6em;
+    }
+    
+    #right label {
+        font-size: 1.8rem;
+    }
+
+    #right form div.profile-picture {
+        height: 150px;
+        width: 150px;
+    }
+
+    .three select {
+        width: 17em;
+        font-size: 2rem;
+    } 
+    
+    .three textarea {
+        font-size: 2rem;
+        width: 17em;
+    }
+
+    
+    #signinPanel {
+        height: 30em;
+        width: 40em;
+    }
+
+    #signinPanel form {
+        width: 40em;
+        height: 30em;
+    }
+
+    #signinPanel form p {
+        color: var(--color-yankees-blue);
+        font-size: 2.3rem;
+    }
+    
+    #signinPanel form input {
+        width: 17em;
+        font-size: 1.8rem;
+    }
+
+    #signinPanel form input[type=submit] {
+        margin-top: 50px;
+    }
+
+
+
+
 }
 
 @media (max-width: 1024px) {
@@ -1245,7 +1395,7 @@
         transform: translateX(-100%);
     }
 
-    #flashcardList, #profileSite, #friendsList, #learn, #createSet, #right, #group, #ranking, #settings {
+    #flashcardList, #profileSite, #friendsList, #learn, #createSet, #group, #ranking, #settings {
         left: 50%;
     }
 
