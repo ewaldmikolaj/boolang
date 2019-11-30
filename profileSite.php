@@ -11,8 +11,8 @@
 </head>
 <body>
     <?php
-        require_once("podstrony/nav.php");
-        require_once("podstrony/profile.php");
+        require_once("./podstrony/nav.php");
+        require_once("./podstrony/profile.php");
     ?>
 </body>
 </html>

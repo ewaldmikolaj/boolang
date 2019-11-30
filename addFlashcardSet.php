@@ -11,8 +11,8 @@
 </head>
 <body>
     <?php
-        require_once("podstrony/nav.php");
-        require_once("podstrony/addFlashcard.php");
+        require_once("./podstrony/nav.php");
+        require_once("./podstrony/addFlashcard.php");
     ?>
     <script src="links/addFlashcard.js"></script>
 </body>

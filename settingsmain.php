@@ -10,8 +10,8 @@
 </head>
 <body>
     <?php
-        require_once("podstrony/nav.php");
-        require_once("podstrony/settings.php")
+        require_once("./podstrony/nav.php");
+        require_once("./podstrony/settings.php")
     ?>
 </body>
 </html>

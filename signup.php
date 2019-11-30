@@ -11,9 +11,9 @@
 </head>
 <body>
     <?php
-        require_once("podstrony/signupL.php");
-        require_once("podstrony/nav.php");
-        require_once("podstrony/signupP.php");
+        require_once("./podstrony/signupL.php");
+        require_once("./podstrony/nav.php");
+        require_once("./podstrony/signupP.php");
     ?>
 </body>
 </html>
