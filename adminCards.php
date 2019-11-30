@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.css">
-    <title>BooLang | Admin</title>
+    <title>BooLang | Admin | Fiszki</title>
 </head>
 <body style="background-color: #1B98E0;" class="overflow-hidden container">
     <a href="./admin.php" class="position-absolute" style="top: 10px; right: 15px;"><button type="button" class="btn btn-light">Wyjdź</button></a>
