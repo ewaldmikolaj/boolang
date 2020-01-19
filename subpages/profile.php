@@ -2,7 +2,13 @@
     <div id="profileSite">
         <div>
             <img src="" alt="">
-            <span>Nazwa użytkownika</span>
+            <span>
+            <?php
+            if (isset($_SESSION['username'])) {
+                echo $_SESSION['username'];
+            }
+            ?>
+            </span>
         </div>
         <div>
  
