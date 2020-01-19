@@ -193,7 +193,6 @@ li .icon {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 /*REJESTRACJA: Progress bar */
@@ -240,8 +239,8 @@ li .icon {
     min-height: 300px;
 }
 
-#right form input[type=text], 
-#right form input[type=password] {
+#right form input[type=text], #right form input[type=password],
+#right form input[type=email] {
     border-radius: 20px;
     color: var(--color-yankees-blue);
     margin-bottom: 43px;
@@ -259,72 +258,6 @@ label {
     display: block;
 }
 
-/* second form */
-#right form div div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#right form div.profile-picture {
-    background-color: grey;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-}
-
-.fileContainer {
-    overflow: hidden;
-    position: relative;
-    display: block;
-    background-color: var(--color-white);
-    border-radius: 20px;
-    color: var(--color-yankees-blue);
-    padding: 10px;
-}
-
-.fileContainer input[type=file] {
-    cursor: inherit;
-    display: block;
-    min-height: 100%;
-    min-width: 100%;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-align: right;
-}
-
-/* thrid form */
-
-.three select {
-    width: 18vw;
-    height: 5vh;
-    color: var(--color-yankees-blue);
-    font-size: 1rem;
-    background-color: var(--color-white);
-    border: 1px solid var(--color-white);
-    padding: 10px;
-    box-shadow: 0 15px 30px -10p var(--color-lapis);
-    border-radius: 10px;
-}
-
-.three select option {
-    color: var(--color-yankees-blue);
-    line-height: 200%;
-}
-
-.three textarea {
-    width: 18vw;
-    height: 10vh;
-    resize: none;
-    color: var(--color-yankees-blue);
-    background-color: var(--color-white);
-    border: 0;
-    border-radius: 10px;
-}
-
 /* buttons */
 
 .przycisk {
@@ -334,18 +267,7 @@ label {
     color: var(--color-white);
     background-color: var(--color-yankees-blue);
     border: 1px solid var(--color-yankees-blue);
-}
-
-.cofnij {
-    margin: 3vh auto auto 1vw;
-}
-
-.dalej, .send {
-    margin: 3vh 1vw auto 4vw;
-}
-
-.display {
-    display: none;
+    margin: auto;
 }
 
 /* lista fiszek */
