@@ -3,24 +3,24 @@
         <div>
             <div>
                 <div>
-                    <img src="photos/przyklad.jpg" alt="">
-                    <img src="icons/gold-medal (1).png" alt="">
+                    <img src="./../photos/przyklad.jpg" alt="">
+                    <img src="./../icons/gold-medal (1).png" alt="">
                 </div>
                 <h2>Mikołaj Ewald</h2>
                 <p>200 punktów</p>
             </div>
             <div>
                 <div>
-                    <img src="photos/przyklad.jpg" alt="">
-                    <img src="icons/second.png" alt="">
+                    <img src="./../photos/przyklad.jpg" alt="">
+                    <img src="./../icons/second.png" alt="">
                 </div>
                 <h2>Mikołaj Ewald</h2>
                 <p>150 punktów</p>
             </div>
             <div>
                 <div>
-                    <img src="photos/przyklad.jpg" alt="">
-                    <img src="icons/third.png" alt="">
+                    <img src="./../photos/przyklad.jpg" alt="">
+                    <img src="./../icons/third.png" alt="">
                 </div>
                 <h2>Mikołaj Ewald</h2>
                 <p>100 punktów</p>

@@ -46,4 +46,4 @@
         </div>
     </form>
 </section>
-<script src="links/form.js"></script>
+<script src="./../links/form.js"></script>
