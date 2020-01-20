@@ -939,50 +939,7 @@ div.customSelect:after {
     border-radius: 20px;
 }
 
-#settAvatar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#settAvatar img {
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-color: grey;
-    border-radius: 50%;
-}
-
-#settAvatar div {
-    line-height: 80px;
-    position: relative;
-    margin-left: 10px;
-}
-
-#settAvatar div input[type=file] {
-    width: 8vh;
-    color: transparent;
-}
-
-#settAvatar div input[type=file]::-webkit-file-upload-button {
-    visibility: hidden;
-}
-
-#settAvatar div input::before {
-    content: 'wybierz plik';
-    color: var(--color-white);
-    position: absolute;
-    top: 25px;
-    left: -1px;
-    line-height: 4vh;
-    background-color: var(--color-sea-blue);
-    width: 8vw;
-    height: 4vh;
-    border-radius: 20px;
-    text-align: center;
-}
-
-#formSettings input[type=text]:focus, #formSettings input[type=file]:focus, #formSettings textarea:focus {
+#formSettings input[type=text]:focus, #formSettings textarea:focus {
     outline: none;
 }
 
@@ -991,7 +948,7 @@ div.customSelect:after {
     width: 10vw;
     height: 4vh;
     font-size: 1.2rem;
-    margin: 70px 45px 0 0;
+    margin: 90px 45px 0 0;
     color: var(--color-white);
     background-color: var(--color-sea-blue);
     padding: 5px;

@@ -16,12 +16,12 @@ if (isset($_POST['sign-submit'])) {
         $result = mysqli_query($conn, $sql);
         $result2 = mysqli_query($conn, $sql2);
         if ($row = mysqli_fetch_assoc($result)) {
-            // $pwdCheck = password_verify($password, $row['Haslo']);
-            if ($row['Haslo'] != $password) {
+            $pwdCheck = password_verify($password, $row['Haslo']);
+            if (!$pwdCheck) {
                 header('Location: ./../pages/signSite.php?error=zle_haslo');
                 exit();
             }
-            else if ($row['Haslo'] == $password) {
+            else if ($pwdCheck) {
                 session_start();
                 $_SESSION['username'] = $row['Nazwa'];
                 $_SESSION['userId'] = $row['IDuzytkownika'];

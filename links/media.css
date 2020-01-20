@@ -269,19 +269,6 @@
         margin-bottom: 30px;
     }
 
-    #settAvatar img {
-        width: 60px;
-        height: 60px;
-    }
-
-    #settAvatar div {
-        line-height: 60px;
-    }
-
-    #settAvatar div input::before {
-        width: 6em;
-    }
-
     #formSettings input[type=submit] {
         margin: 15px auto;
         width: 15em;
@@ -560,15 +547,6 @@
 
     #formSettings textarea {
         width: 21em;
-    }
-
-    #settAvatar img {
-        width: 70px;
-        height: 70px;
-    }
-
-    #settAvatar div {
-        line-height: 70px;
     }
 
     #formSettings input[type=submit] {
@@ -1098,16 +1076,6 @@
     
     #formSettings label {
         font-size: 2rem;
-    }
-
-    #settAvatar div input::before {
-        width: 10em;
-        font-size: 1.5rem;
-    }
-
-    #settAvatar img {
-        width: 150px;
-        height: 150px;
     }
 
     #learn {

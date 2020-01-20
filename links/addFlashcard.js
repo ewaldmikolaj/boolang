@@ -7,11 +7,11 @@ button.addEventListener("click", () => {
     flashcardSetNew.innerHTML = 
     `<div class="position">${i}</div>
     <div>
-        <input name="word" type="text">
+        <input name="word" required type="text">
         <label for="word">Słówko</label>
     </div>
     <div>
-        <input name="definition" type="text">
+        <input name="definition" required type="text">
         <label for="definition">Definicja</label>  
     </div>`;
     flashcardSet.appendChild(flashcardSetNew);

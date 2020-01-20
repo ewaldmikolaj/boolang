@@ -16,9 +16,9 @@ if (!isset($_SESSION)){
 </head>
 <body>
     <?php
-        require_once("./../podstrony/nav.php");
-        require_once("./../podstrony/addFlashcard.php");
+        require_once("./../subpages/nav.php");
+        require_once("./../subpages/addFlashcard.php");
     ?>
-    <script src="links/addFlashcard.js"></script>
+    <script src="./../links/addFlashcard.js"></script>
 </body>
 </html>
