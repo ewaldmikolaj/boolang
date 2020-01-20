@@ -9,8 +9,8 @@ if (isset($_POST['stngs-submit'])) {
     } else {
         if (isset($_POST['username'])) {
             $username = $_POST['username'];
-            // $sql = "UPDATE uzytkownik SET Nazwa = '$username' WHERE IDuzytkownika = \"$_SESSION[\"userId\"]\";";
-            // mysqli_querry($conn, $sql);
+            $sql = "UPDATE uzytkownik SET Nazwa = '$username' WHERE IDuzytkownika = '".$_SESSION['userId']."';";
+            mysqli_query($conn, $sql);
         }
         if (isset($_POST['email'])) {
             $email = $_POST['email'];
