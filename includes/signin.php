@@ -11,9 +11,11 @@ if (isset($_POST['sign-submit'])) {
         exit();
     }
     else {
-        $sql = "SELECT * FROM uzytkownik WHERE Nazwa='$username' OR Email='$username';";
+        $sql = mysqli_prepare($conn, "SELECT * FROM uzytkownik WHERE Nazwa=? OR Email=?");
+        mysqli_stmt_bind_param($sql, 'ss', $username, $username);
         $sql2 = "SELECT IDrodzajukonta FROM konto WHERE RodzajKonta='admin';";
-        $result = mysqli_query($conn, $sql);
+        mysqli_stmt_execute($sql);
+        $result = mysqli_stmt_get_result($sql);
         $result2 = mysqli_query($conn, $sql2);
         if ($row = mysqli_fetch_assoc($result)) {
             $pwdCheck = password_verify($password, $row['Haslo']);
