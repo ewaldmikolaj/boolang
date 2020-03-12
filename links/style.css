@@ -1,1074 +1,305 @@
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-:root {
-    --color-white: #E8F1F2;
-    --color-background: #1B98E0;
-    --color-lapis: #247BA0;
-    --color-sea-blue: #006494;
-    --color-yankees-blue: #13293D;
+* {
+    --color: #13293D;
+    --color2: #006494;
+    --font: 'Roboto', sans-serif;
 }
 
-* {
+html {
     margin: 0;
     padding: 0;
-    --czcionka: 'Open Sans' , sans-serif;
-    color: var(--color-white);
-    font-family: var(--czcionka);
+    font-family: var(--font);
+    font-weight: 400;
+    background-color: var(--color2);
+    color: white;
 }
 
 body {
-    background-color: var(--color-background);
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
-/* PANEL NAWIGACYJNY */
+/* menu */
 
-#sidebar {
-    color: var(--kolor-white);
-    position: fixed;
-    height: 100vh;
-    width: 250px;
-    background-color: var(--color-yankees-blue);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    font-weight: 250;
-    transition: 1s;
-}
-
-#arrow {
-    height: 25px;
-    width: 25px;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-}
-
-#avatar {
-    width: 70px;
-    height: 70px;
-    background-color: grey;
-    border-radius: 50%;
-    margin: 90px auto 45px auto;
-}
-
-li {
-    margin: 6px 0px 6px 0px;
-    display: block;
-    padding: 5px 0 5px 20px;
-    line-height: 25px;
-}
-
-li > a{ 
-    text-decoration: none;
-    font-size: 30px;
-}
-
-li:hover {
-    background-color:  var(--color-lapis);
-}
-
-a:visited {
-    color: var(--kolor-tekstu);
-}
-
-li .icon {
-    height: 25px;
-    width: 25px;
-    padding-right: 7px;
-}
-
-#indexLogo {
-    display: block;
-    margin: auto auto 40px auto;
-}
-
-#sidebar #indexLogo #logo {
-    height: 50px;
-    width: 50px;
-    display: block;
-    margin: auto auto 40px auto;
-}
-
-.hide {
-    transform: translateX(-250px);
-}
-
-.rotate {
-    transition: 0.7s;
-    transform: rotatey(180deg) rotateX(180deg) translateX(-50px);
-}
-
-/* STRONA GŁÓWNA */
-
-#signIn {
-    background-color: var(--color-sea-blue);
-    width: 10em;
-    height: 3em;
-    position: absolute;
-    top: 30px;
-    right: 60px;
-    border-radius: 30px;
-}
-
-#signUp a {
-    position: absolute;
-    right: 85px;
-    top: 80px;
-    text-decoration: none;
-}
-
-#signIn:hover {
-    background-color: var(--color-lapis);
-}
-
-#signIn > p {
-    display: block;
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 1rem;
-    line-height: 3em;
-    font-weight: 550;
-    color: var(--color-yankees-blue);
-}
-
-#welcome {
-    padding-top: 27vh;
-    padding-left: 25vw;
-    width: 55vw;
-}
-
-#title {
-    font-size: 70px;
-    font-weight: 500;
-    letter-spacing: 6px;
-    padding-bottom: 70px;
-}
-
-#welcome > p {
-    font-size: 3.7rem;
-    letter-spacing: 4px;
-}
-
-.job {
-    padding-top: 80px;
-    height: 100px;
-    width: 100px;
-    margin: 0px 30px 0px 0px;
-}
-
-/* LEWA CZĘŚC REJESTRACJI */
-
-#left {
-    height: 100vh;
-    width: 50vw;
-    background-color: var(--color-yankees-blue);
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 60px;
-    z-index: 8;
-}
-
-#left div img {
-    height: 60px;
-    width: 60px;
-}
-
-#left div {
-    position: absolute;
-    left: 25vw;
-    top: 50vh;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-/*REJESTRACJA */
-
-#right {
-    height: 100vh;
-    width: 50vw;
-    background-color: var(--color-background);
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/*REJESTRACJA: Progress bar */
-
-#progress {
-    position: fixed;
-    top: 22vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-#progress div:nth-child(odd) {
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
-    background-color: lightgrey;   
-}
-
-#progress div:nth-child(odd) p {
-    text-align: center;
-    line-height: 60px;
-    font-size: 2rem; 
-}
-
-#progress div:nth-child(even) {
-    width: 120px;
-    height: 10px;
-    margin: auto 0 auto 0;
-    background-color: lightgrey;
-}
-
-#progress div.active {
-    background-color: var(--color-yankees-blue);
-}
-
-#right form {
+.menu {
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
-    min-height: 300px;
+    background-color: var(--color);
+    padding: 40px 0px 40px 5px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 3;
+    transition: 1s;
 }
 
-#right form input[type=text], #right form input[type=password],
-#right form input[type=email] {
-    border-radius: 20px;
-    color: var(--color-yankees-blue);
-    margin-bottom: 43px;
-    border-style: 1px solid var(--color-white);
+.menu--hide {
+    transform: translateX(-100%);
+}
+
+.menu__button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    transition: .5s;
+}
+
+.menu__button--clicked {
+    transform: rotatey(180deg) rotateX(180deg) translateX(-50px)
+}
+
+.menu__avatar {
+    width: 70px;
+    height: 70px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.menu__list {
+    list-style-type: none;
+    padding: 0px;
+    width: 100%;
+    flex: 1;
+}
+
+.menu__component:hover {
+    background-color: var(--color2);
+}
+
+.menu__link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.menu__component {
+    margin-bottom: 10px;
+}
+
+.menu__icon {
+    width: 20px;
+}
+
+.menu__logo {
+    width: 50px;
+}
+
+/* index */
+    
+.welcome {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     padding: 10px;
-    width: 18vw;
 }
 
-#right form input[type=text]:focus, 
-#right form input[type=password]:focus {
-    outline: none;
-}
-
-label {
+.welcome__title, .welcome__description {
+    margin-bottom: 10px;
     display: block;
+    width: 100%;
 }
 
-/* buttons */
+.welcome__job {
+    height: 50px;
+    width: 50px;
+    margin-right: 30px;
+}
 
-.przycisk {
-    width: 12vh;
-    height: 4vh;
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.buttons__link {
+    text-decoration: none;
+    background-color: white;
+    margin-bottom: 5px;
     border-radius: 20px;
-    color: var(--color-white);
-    background-color: var(--color-yankees-blue);
-    border: 1px solid var(--color-yankees-blue);
-    margin: auto;
+    padding: 5px;
+    font-size: 1rem;
+    color: var(--color2);
+}
+
+/* profile */
+
+.profileSite {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.profileSite__userinfo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileSite__username, .profileSite__header {
+    color: black;
+}
+
+/* logowanie */
+
+.sign {
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;   
+    padding: 7px;
+    box-sizing: border-box;
+    top: 50%; 
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.sign__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 270px;
+}
+
+.sign__header {
+    color: var(--color2);
+}
+
+.sign__input {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+}
+
+.sign__submit {
+    background-color: transparent;
+    border: 2px solid var(--color);
+    margin: 5px;
+}
+
+.sign__label {
+    color: black;
 }
 
 /* lista fiszek */
 
-#addFlash {
-    background-color: var(--color-sea-blue);
-    width: 7vw;
-    font-weight: 300;
-    position: absolute;
-    top: 30px;
-    right: 60px;
-    border-radius: 30px;
-    font-size: 1.1rem;
-    text-align: center; 
-    padding: 10px; 
-    text-decoration: none;  
-}
-
-#flashcardList {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 45%;
-    left: 55%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-#flashcardList div div {
-    max-height: 60vh;
-}
-
-#flashcardList div:nth-of-type(1) div {
-    overflow: auto;
-}
-
-#flashcardList div div div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 9vh;
-    width: 90vh;
-    background-color: var(--color-white);  
-    margin: 20px; 
-    margin-left: 0px;
-    border-radius: 15px; 
-}
-
-#flashcardList div p:first-child {
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-
-#flashcardList div div img {            
-    display: block;
-    background-color: grey;
-    margin-left: 10px;
-    width: 3vw;
-    height: 3vw;
-}
-
-#flashcardList div div p {
-    color: black;
-    padding: 10px;
-}
-
-#flashcardList div:nth-of-type(1) div::-webkit-scrollbar {
-    background-color: var(--color-background);
-}
-
-#flashcardList div:nth-of-type(1) div::-webkit-scrollbar-thumb {
-    background-color: var(--color-white);
-    border-radius: 10px;
-}
-
-/* strona profilowa */
-
-#profileSite {
-    position: fixed;
-    top: 50%;
-    left: 55%;
-    transform: translateX(-50%) translateY(-50%);
-    background-color: var(--color-white);
-    width: 65vw;
-    height: 70vh;
-    border-radius: 20px;
-    padding: 2%;
-}
-
-#profileSite > div:nth-child(1) {
-    border-bottom: 2px solid var(--color-background);
-    height: 15vh;
-}
-
-#profileSite div:nth-child(1) img {
-    display: inline-block;
-    margin-top: 2vh;
-    background-color: grey;
-    border-radius: 50%;
-    width: 6.3vw;
-    height: auto;
-    padding-bottom: 6.3vw;
-}
-
-#profileSite > div:nth-child(1) span {
-    position: fixed;
-    color: black;
-    font-size: 2rem;
-    line-height: 16vh;
-    padding-left: 2vw;
-}
-
-#profileSite > div:nth-child(2) {
-    border-bottom: 2px solid var(--color-background);
-    height: 8vh;
-}
-
-#profileSite > div:nth-child(3) > div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    min-height: 43vh;
-    padding-top: 2.5vh;
-}
-
-#profileSite > div:nth-child(3) p {
-    margin-top: 2vh;
-    color: var(--color-yankees-blue);
-    font-size: 1.7rem;
-}
-
-#profileSite div:nth-child(3) div div {
-    background-color: var(--color-sea-blue);
-    width: 12vw;
-    height: 8vh;
-    margin: 0 3vw 2vh 0;
-    border-radius: 10px;
-}
-
-/* ranking */
-
-#ranking {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-#standing > div:nth-child(1) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} 
-
-#standing > div:nth-child(1) > div {
-    border: 1x solid var(--color-white);
-    background-color: var(--color-white);
-    margin: 0.5vw;
-    min-height: 30vh;
-    width: 17vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-#standing > div:nth-child(1) div h2 {
-    color: var(--color-background);
-    margin-top: 2vh;
-    font-size: 1.3rem;
-}
-
-#standing > div:nth-child(1) div p {
-    color: var(--color-yankees-blue); 
-    display: block;
-    border-radius: 20px;
-    background-color: lightgrey;
-    padding: 10px;
-    margin: 1vh;
-}
-
-#standing > div:nth-child(1) > div > div {
-    position: relative;
-    width: 6.5vw;
-}
-
-#standing > div:nth-child(1) div div img:nth-child(1) {
-    width: 6vw;
-    border-radius: 50%;
-}
-
-#standing > div:nth-child(1) div > div img:nth-child(2) {
-    width: 2vw;
-    height: auto;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-#standing > div:nth-child(2) table {
-    margin: auto;
-    width: 53vw;
-    max-width: 53vw;
-    border-collapse: separate;
-    border-spacing: 0 1vh;
-}
-
-#standing > div:nth-child(2) table tr {
-    background-color: var(--color-white);
-    height: 5.5vh;
-}
-
-#standing > div:nth-child(2) table td {
-    margin-bottom: 15px;
-    color: var(--color-sea-blue);
-    font-weight: 550;
-}
-
-#standing > div:nth-child(2) table td:first-child {
-    border-top-left-radius: 10px;
-}
-
-#standing > div:nth-child(2) table td:first-child {
-    border-bottom-left-radius: 10px;
-}
-
-#standing > div:nth-child(2) table td:last-child {
-    border-top-right-radius: 10px;
-}
-
-#standing > div:nth-child(2) table td:last-child {
-    border-bottom-right-radius: 10px;
-}
-
-#standing > div:nth-child(2) table td:nth-of-type(1) {
-    text-align: center;
-    color: lightgray;
-}
-
-#standing > div:nth-child(2) table td:nth-of-type(3) {
-    text-align: right;
-    padding-right: 60px;
-}
-
-/* dodawanie fiszek */
-
-#createSet {
-    position: absolute;
-    top: 45vh;
-    left: 55vw;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-#createSet form {
-    display: flex;
-    flex-direction: column;
-    width: 49vw;
-    max-height: 70vh;
-}
-
-#createSet form > h2 {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-
-#createSet form div:nth-of-type(1) p {
-    font-size: 1.2rem;
-}
-
-#createSet form > div:nth-of-type(1) input {
-    color: black;
-    width: 20vw;
-    height: 3vh;
-    padding: 5px;
-    background-color: var(--color-background);
-    border: 0;
-    border-bottom: 2px solid var(--color-white);
-}
-
-#createSet form > div:nth-of-type(1) input:focus {
-    outline: none;
-}
-
-#createSet form > div:nth-of-type(1) input::placeholder {
-    color: var(--color-white);
-    opacity: 0.6;
-}
-
-div.customSelect {
-    display: inline-block;
-    width: 14vw;
-    height: 4vh;
-    margin: 20px 2vw 20px 0;
-    position: relative;
-}
-
-#createSet form > div:nth-of-type(2) > div.customSelect select {
-    width: 14vw;
-    height: 4vh;
-    color: var(--color-yankees-blue);
-    border: 0;
-    background-color: var(--color-white);
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding-left: 10px;
-    border-radius: 10px;
-}
-
-#createSet form > div:nth-of-type(2) > div.customSelect select:focus {
-    outline: none;
-}
-
-div.customSelect:after {
-   content: 'keyboard_arrow_down'; 
-   font-family: 'material icons';
-   position: absolute;
-   font-size: 1.2rem;
-   top: 50%;
-   transform: translateY(-50%);
-   right: 1vw;
-   color: var(--color-sea-blue);
-   translate: 1s;
-}
-
-#createSet form div:nth-of-type(2) > div.customSelect select option {
-    color: black;
-}
-
-#createSet form > #overflowSet {
-    position: relative;
-    overflow: auto;
-    scroll-behavior: smooth;
-}
-
-#createSet form > #overflowSet::-webkit-scrollbar {
-    background-color: var(--color-background);
-    width: 10px;
-}
-
-#createSet form > #overflowSet::-webkit-scrollbar-thumb {
-    background-color: var(--color-white);
-    border-radius: 20px;
-}
-
-
-#createSet form > #overflowSet div.flashcard {
-    color: black;
-    width: 45.4vw;
-    height: 12vh;
-    display: flex;
-    padding: 10px;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: var(--color-white);
-    border-radius: 10px;
-}
-
-#createSet form > #overflowSet div.flashcard > div.position {
-    width: 30vw;
-    color: var(--color-yankees-blue);
-}
-
-#createSet form > #overflowSet div.flashcard > div > input {
-    width: 16vw;
-    border: 0;
-    background-color: var(--color-white);
-    border-bottom: 2px solid var(--color-background);
-    color: black;
-    font-size: 1.2rem;
-}
-
-#createSet form > #overflowSet div.flashcard > div > input:focus {
-    outline: none;
-}
-
-#createSet form > #overflowSet div.flashcard > div > label {
-    color: var(--color-lapis);
-    margin-top: 3px;
-    font-size: 1.1rem;
-}
-
-#createSet form > #addFlashcard {
-    align-self: center;
-    margin: 25px 2vw 0 0;
-    display: block;
-    border: 2px solid var(--color-white);
-    padding: 10px;
-    border-radius: 20px;
-    background-color: var(--color-sea-blue);
-}
-
-#createSet > form > input[type=submit] {
-    color: black;
-    align-self: flex-end;
-    margin-right: 2vw;
-    background-color: var(--color-white);
-    border: 0;
-    width: 8vw;
-    height: 40px;
-    border-radius: 20px;
-    min-height: 40px;
-}
-
-/* lista znajomych */
-
-#friendsList {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translateX(-50%) translateY(-50%);
-    display: flex;
-    flex-direction: row;
-    min-width: 50vw;
-}
-
-#friendsList > form > .friendsTop {
-    background-color: var(--color-background);
-}
-
-#friendsList > form > .friendsTop > div.customSelect select {
-    width: 14vw;
-    height: 4vh;
-    box-sizing: border-box;
-    background-color: var(--color-background);
-    border: 0;
-    padding: 8px;
-    border-bottom: 2px solid var(--color-white);
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    font-size: 0.9rem;
-}
-
-#friendsList > form > .friendsTop > div.customSelect select:focus {
-    outline: none;
-}
-
-#friendsList > form > .friendsTop > div.customSelect select option {
-    background-color: var(--color-background);
-    font-size: 1rem;
-    line-height: 200%;
-}
-
-#friendsList > form > .friendsTop > input {
-    box-sizing: border-box;
-    width: 33vw;
-    height: 4vh;
-    border: 0;
-    border-bottom: 2px solid var(--color-white);
-    background-color: var(--color-background);
-    font-size: 0.9rem;
-}
-
-#friendsList > form > .friendsTop > input:focus {
-    outline: none;
-}
-
-#friendsList > form > .friendsTop > input::placeholder {
-    color: var(--color-white);
-    opacity: 0.7;
-}
-
-#friendsList > form > table {
-    width: 47.5vw;
-    max-width: 47.5vw;
-    border-collapse: separate;
-    border-spacing: 0 1.5vh;
-    font-size: 0.9rem;
-}
-
-#friendsList > form > table tr {
-    height: 3.3vh;
-    margin-bottom: 10px;
-    background-color: var(--color-white);
-}
-
-#friendsList > form > table tr td {
-    color: var(--color-yankees-blue);
-    padding: 6px 10px 6px 10px;
-    position: relative;
-}
-
-#friendsList > form > table td:first-child {
-    border-top-left-radius: 10px; 
-    border-bottom-left-radius: 10px;
-}
-
-#friendsList > form > table td:last-child {
-    border-bottom-right-radius: 10px; 
-    border-top-right-radius: 10px; 
-}
-
-#friendsList > form > table tr td p {
-    color: var(--color-yankees-blue);
-}
-
-#friendsList > form > table tr > td:nth-of-type(1) {
-    width: 15vw;
-}
-
-#friendsList > form > table tr > td:nth-of-type(2) {
-    text-align: center;
-}
-
-#friendsList > form > table tr > td:nth-of-type(3) {
-    text-align: left;
-    width: 13vw;
-    max-width: 13vw;
-}
-
-#friendsList > form > table tr td p:nth-of-type(1) {
-    line-height: 3.3vh;
-}
-
-/* klasy */
-
-#group {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 62vw;
-    height: 72vh;
-    border-radius: 20px;
-    background-color: var(--color-white);
-    display: grid;
-    grid-template-columns: 78% 22%;
-    grid-template-rows: 2% 6% auto 2%;
-}
-
-#group > h2 {
-    grid-column: 1;
-    grid-row: 1;
-    color: var(--color-yankees-blue);
-    font-size: 2.2rem;
-    height: 4vh;
-    width: 62vw;
-    margin: 20px 0 0 30px;
-    font-weight: 500;
-}
-
-#group #groupList {
-    width: 47vw;
-    height: 62vh;
-    grid-row: 3;
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-    overflow-x: hidden;
-    align-items: center;
-}
-
-#groupList::-webkit-scrollbar, #groupMembers::-webkit-scrollbar {
-    width: 0;
-}
-
-#groupList > div > span {
-    line-height: 10vh;
-    margin-left: 30px;
-    font-size: 1rem;
-}
-
-#group #groupMembers {
-    width: 15vw;
-    height: 68vh;
-    grid-row: 2/3;
-    grid-column: 2;
-    border-left: 3px solid var(--color-yankees-blue);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-#group #groupList > div {
-    background-color: var(--color-sea-blue);
-    width: 45vw;
-    min-height: 10vh;
-    margin-top: 20px;
-    border-radius: 20px;
-}
-
-#group #groupMembers > div {
-    width: 13vw;
-    min-height: 6vh;
-}
-
-#group #groupMembers > div:nth-child(1) {
-    margin-top: 8vh;
-}
-
-#group #groupMembers > div > img {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: grey;
-    vertical-align: middle;
-}
-
-#group #groupMembers > div > span {
-    line-height: 40px;
-    margin-left: 4px;
-    color: var(--color-yankees-blue);
-    vertical-align: middle;
-}
-
-/* ustawienia */
-
-#settings {
-    width: 60vw;
-    height: 70vh;
-    background-color: var(--color-white);
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translateY(-50%) translateX(-50%);
-    border-radius: 20px;
-}
-
-#formSettings {
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-}
-
-#formSettings h2 {
-    font-size: 1.6rem;
-    color: var(--color-yankees-blue);
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-
-#formSettings input {
-    width: 20vw;
-    height: 4.2vh;
-    border-radius: 20px;
-    border: 0;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    color: var(--color-yankees-blue);
-}
-
-#formSettings label {
-    color: var(--color-yankees-blue);
-    margin-bottom: 7px;
-    font-size: 1.1rem;
-}
-
-#formSettings textarea {
-    width: 19.5vw;
-    height: 8vh;
-    resize: none;
-    border: 0;
-    padding: 10px;
-    color: var(--color-yankees-blue);
-    margin-bottom: 50px;
-    border-radius: 20px;
-}
-
-#formSettings input[type=text]:focus, #formSettings textarea:focus {
-    outline: none;
-}
-
-#formSettings input[type=submit] {
-    align-self: flex-end;
-    width: 10vw;
-    height: 4vh;
-    font-size: 1.2rem;
-    margin: 90px 45px 0 0;
-    color: var(--color-white);
-    background-color: var(--color-sea-blue);
-    padding: 5px;
-}
-
-/* fiszki - ogladanie */
-
-#learn {    
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    width: 50vw;
-    margin: auto;
-    position: absolute;
-    top: 45%;
-    left: 55%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-#learn > p {
-    margin-bottom: 30px;
-}
-
-div.flashLearn {
-    background-color: var(--color-white);
-    width: 50vw;
-    height: 60vh;
-    display: grid;
-    grid-template-columns: 30px auto 20px;
-    grid-template-rows: 16vh 1.6rem auto 6vh 30px;
-    border-radius: 20px;
-}
-
-div.flashLearn > p {
-    color: var(--color-yankees-blue);
-    font-size: 1.5rem;
-    grid-column: 2;
-    grid-row: 2;
-}
-
-div.flashLearn form {
-    grid-column: 2;
-    grid-row: 4;
-}
-
-div.flashLearn form input {
-    width: 40vw;
-    height: 4vh;
-    border: 0;
-    color: var(--color-yankees-blue);
-    background-color: var(--color-white);
-    border-bottom: 2px solid var(--color-background);
-    font-size: 1rem;
-}
-
-div.flashLearn form input:focus {
-    outline: none;
-}
-
-div.flashLearn form button {
-    width: 5vw;
-    height: 4vh;
-    border-radius: 20px;
-    border: 0;
-    background-color: var(--color-sea-blue);
-    margin-right: 10px;
-}
-
-div.flashLearn form button:focus {
-    outline: none;
-}
-
-#signinPanel {
+.flashcardList {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background-color: var(--color-white);
-    width: 30em;
-    height: 20em;
-    border-radius: 20px;
-}
-
-#signinPanel form {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    height: 50%;
+}
+
+.flashcardList__box {
+    overflow-y: scroll;
+    height: 100%;
+    -ms-overflow-style: none;
+}
+
+.flashcardList__box::-webkit-scrollbar {
+    display: none;
+}
+
+.flashcardList__element {
+    background-color: white;
+    display: flex;
     align-items: center;
-    width: 30em;
-    height: 20em;
-    margin: auto;
-}
-
-#signinPanel form p {
-    color: var(--color-yankees-blue);
-    font-size: 1.6rem;
-    margin-top: 2em;
-}
-
-#signinPanel form input {
+    width: 280px;
+    height: 50px;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box;
     border-radius: 10px;
-    width: 16em;
-    border: 0;
-    font-size: 1.4rem;
-    padding: 3px;
-    color: var(--color-yankees-blue);
+    margin-bottom: 10px;
 }
 
-#signinPanel form input:focus {
-    outline: none;
+.flashcardList__img {
+    height: 100%;
+    margin-right: 10px;
+    width: 50px;
 }
 
-#signinPanel form input[type=text] {
-    margin-top: 2em;
+.flashcardList__title {
+    color: var(--color);
 }
 
-#signinPanel form input[type=password] {
-    margin-top: 20px;
-}
+/* nauka */
 
-#signinPanel form input[type=submit] {
-    margin: 15px;
-    width: 6em;
+.scene {
+    width: 100%;
+    height: 280px;
+    margin: 40px 0;
+    perspective: 600px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card.is-flipped {
+    transform: rotateX(180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .card__face--front {
+    background: red;
+  }
+  
+  .card__face--back {
+    background: blue;
+    transform: rotateX(180deg);
+  }
+  
+
+@media (min-width: 768px) {
+    .menu {
+        width: 300px;
+    }
+
+    .buttons__link {
+        font-size: 1.3rem;
+    }
+
+    .flashcardList__element {
+        width: 500px;
+    }
 }

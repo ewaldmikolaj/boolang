@@ -16,7 +16,6 @@ if (!isset($_SESSION)){
 </head>
 <body>
     <?php
-        require_once("./../subpages/nav.php");
         require_once("./../subpages/signform.php");
     ?>
 </body>

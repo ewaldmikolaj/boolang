@@ -1,6 +1,6 @@
-const arrow = document.querySelector("#arrow");
-const sidebar = document.querySelector("nav");
+const arrow = document.querySelector(".menu__button");
+const sidebar = document.querySelector(".menu");
 arrow.addEventListener("click", () => {
-    sidebar.classList.toggle("hide");
-    arrow.classList.toggle("rotate");
+    sidebar.classList.toggle("menu--hide");
+    arrow.classList.toggle("menu__button--clicked");
 });

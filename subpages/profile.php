@@ -1,28 +1,22 @@
-<section>
-    <div id="profileSite">
-        <div>
-            <img src="" alt="">
-            <span>
-            <?php
-            if (isset($_SESSION['username'])) {
-                echo $_SESSION['username'];
-            }
-            ?>
-            </span>
-        </div>
-        <div>
- 
-        </div>
-        <div>
-            <p>Zestawy użytkownika</p>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+<div class="profileSite">
+    <div class="profileSite__userinfo">
+        <span class="profileSite__username">
+        <?php
+        if (isset($_SESSION['username'])) {
+            echo $_SESSION['username'];
+        }
+        ?>
+        </span>
+    </div>
+    <div class="profileSite__sets">
+        <p class="profileSite__header">Zestawy użytkownika</p>
+        <div class="profileSite__sets">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
-</section> 
+</div>

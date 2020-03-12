@@ -1,55 +1,45 @@
-    <a href="addFlashcardSet.php" id="addFlash">Dodaj zestaw</a>
-    <div id="flashcardList">
-        <div>
-            <p>Wszystkie fiszki</p>
-            <div>
-                <a href="learn.php">
-                    <div>
-                        <img src="" alt="">
-                        <p>Nazwa zestawu</p>
-                    </div>
-                </a>
-                <a href="learn.php">
-                    <div>
-                        <img src="" alt="">
-                        <p>Nazwa zestawu</p>
-                    </div>
-                </a>
-                <a href="learn.php">
-                    <div>
-                        <img src="" alt="">
-                        <p>Nazwa zestawu</p>
-                    </div>
-                </a>
-                <a href="learn.php">
-                    <div>
-                        <img src="" alt="">
-                        <p>Nazwa zestawu</p>
-                    </div>
-                </a>
-                <a href="learn.php">
-                    <div>
-                        <img src="" alt="">
-                        <p>Nazwa zestawu</p>
-                    </div>
-                </a>
-                <a href="learn.php">
-                    <div>
-                        <img src="" alt="">
-                        <p>Nazwa zestawu</p>
-                    </div>
-                </a>
-                <a href="learn.php">
-                    <div>
-                        <img src="" alt="">
-                        <p>Nazwa zestawu</p>
-                    </div>
-                </a>
-                <a href="learn.php">                
-                    <div>
-                        <img src="" alt="">
-                        <p>Nazwa zestawu</p>
-                    </div>
-                </a>
-            </div>
+<div class="flashcardList">
+    <div class="flashcardList__box">
+        <p class="flashcardList__header">Wszystkie fiszki</p>
+        <a class="flashcardList__element" href="learn.php">
+            <img class="flashcardList__img" src="./../photos/eng.png" alt="">
+            <p class="flashcardList__title">Nazwa zestawu</p>
+        </a>
+        <a class="flashcardList__element" href="learn.php">
+            <img class="flashcardList__img" src="./../photos/eng.png" alt="">
+            <p class="flashcardList__title">Nazwa zestawu</p>
+        </a>
+        <a class="flashcardList__element" href="learn.php">
+            <img class="flashcardList__img" src="./../photos/ger.png" alt="">
+            <p class="flashcardList__title">Nazwa zestawu</p>
+        </a>
+        <a class="flashcardList__element" href="learn.php">
+            <img class="flashcardList__img" src="./../photos/eng.png" alt="">
+            <p class="flashcardList__title">Nazwa zestawu</p>
+        </a>
+        <a class="flashcardList__element" href="learn.php">
+            <img class="flashcardList__img" src="./../photos/ger.png" alt="">
+            <p class="flashcardList__title">Nazwa zestawu</p>
+        </a>
+        <a class="flashcardList__element" href="learn.php">
+            <img class="flashcardList__img" src="./../photos/eng.png" alt="">
+            <p class="flashcardList__title">Nazwa zestawu</p>
+        </a>
+        <a class="flashcardList__element" href="learn.php">
+            <img class="flashcardList__img" src="./../photos/ger.png" alt="">
+            <p class="flashcardList__title">Nazwa zestawu</p>
+        </a>
+        <a class="flashcardList__element" href="learn.php">
+            <img class="flashcardList__img" src="./../photos/ger.png" alt="">
+            <p class="flashcardList__title">Nazwa zestawu</p>
+        </a>
+        <a class="flashcardList__element" href="learn.php">
+            <img class="flashcardList__img" src="./../photos/eng.png" alt="">
+            <p class="flashcardList__title">Nazwa zestawu</p>
+        </a>
+        <a class="flashcardList__element" href="learn.php">
+            <img class="flashcardList__img" src="./../photos/eng.png" alt="">
+            <p class="flashcardList__title">Nazwa zestawu</p>
+        </a>
     </div>
+</div>
