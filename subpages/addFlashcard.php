@@ -33,18 +33,6 @@
                     ?>
                     </select>
                 </div>
-                <div class="customSelect">
-                    <select name="edition" required id="edition">
-                        <option value="" hidden disabled selected>Uprawnienia</option>
-                    <?php
-                        $sql = "SELECT * FROM uprawnienia;";
-                        $result = mysqli_query($conn, $sql);    
-                        while($row = mysqli_fetch_assoc($result)) {
-                            echo "<option value='".$row['Uprawnienie']."'>".$row['Uprawnienie']."</option>";
-                        }
-                    ?>    
-                    </select>
-                </div>
             </div>
             <div id="overflowSet">
                 <div class="flashcard">

@@ -1,17 +1,25 @@
-// let tabPL = ["stolik", "krzesło", "komputer"];
-// let tabENG = ["table", "chair", "computer"];
-// let i = 0;
+let i = 0;
 
-// let wordPL = document.querySelector(".word");
-// wordPL.innerHTML = tabPL[i];
-// const button = document.querySelector(".flashLearn > form button");
-// button.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     let value = document.querySelector(".wordValue").value;
-//     if (i < 2) i++;
-//     wordPL.innerHTML = tabPL[i];
+let wordPL = document.querySelector(".card__face--front");
+let wordEng = document.querySelector(".card__face--back");
+wordPL.innerHTML = tabPL[i];
+wordEng.innerHTML = tabENG[i];
 
-// })
+const next = document.querySelector(".learn__button--next");
+const prev = document.querySelector(".learn__button--prev");
+next.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (i < 2) i++;
+    wordPL.innerHTML = tabPL[i];
+    wordEng.innerHTML = tabENG[i];
+});
+
+prev.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (i > 0) i--;
+    wordPL.innerHTML = tabPL[i];
+    wordEng.innerHTML = tabENG[i];
+});
 
 var card = document.querySelector('.card');
 card.addEventListener( 'click', function() {

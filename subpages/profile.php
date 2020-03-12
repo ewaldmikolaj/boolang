@@ -5,6 +5,12 @@
         if (isset($_SESSION['username'])) {
             echo $_SESSION['username'];
         }
+        require './../includes/dbh.php';
+        $sql = "SELECT klasa.NazwaKlasy as `klasa` FROM uzytkownik JOIN klasa on uzytkownik.IDklasy=klasa.IDklasy WHERE uzytkownik.IDuzytkownika='$_SESSION[userId]'";
+        $result = mysqli_query($conn, $sql);
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo " $row[klasa]";
+        }
         ?>
         </span>
     </div>

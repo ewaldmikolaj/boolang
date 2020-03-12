@@ -12,9 +12,9 @@
             </li>
             <?php
             if (isset($_SESSION['username'])) {
-            echo "<li class='menu'>";
-                echo "<img class='icon' src='./../icons/logout.png' alt='logout'>";
-                echo "<a href='./../includes/signout.php'>Wyloguj</a>";
+            echo "<li class='menu__component'>";
+                echo "<img class='menu__icon' src='./../icons/logout.png' alt='logout'>";
+                echo "<a href='./../includes/signout.php' class='menu__link'>Wyloguj</a>";
             echo "</li>";
             }
             ?>
