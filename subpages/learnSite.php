@@ -12,24 +12,8 @@
         <button class="learn__button learn__button--next">Następna</button>
     </div>
 </section>
-<?php
-
-require './../includes/dbh.php';
-
-if (isset($_GET['set_id'])) {
-    $id = $_GET['set_id'];
-}
-
-$wordPL = [];
-$wordEng = [];
-
-$sql = "SELECT * FROM fiszka WHERE IDzestawu='$id'";
-$result = mysqli_query($conn, $sql);
-
-while ($row = mysqli_fetch_assoc($result)) {
-    array_push($wordPL, $row['Definicja']);
-    array_push($wordEng, $row['Slowko']);
-}
-
-?>
+<script type="text/javascript">
+    var tabPL = <?php echo json_encode($_SESSION['tabPL']); ?>;
+    var tabENG = <?php echo json_encode($_SESSION['tabENG']); ?>;
+</script>
 <script type="text/javascript" src="./../links/flashcardRotate.js"></script>

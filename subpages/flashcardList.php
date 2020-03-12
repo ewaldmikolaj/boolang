@@ -24,7 +24,7 @@
                     brak;
             }
             echo <<<SET
-            <a class="flashcardList__element" href="learn.php?set_id=$row[id]">
+            <a class="flashcardList__element" href="./../includes/getSet.php?set_id=$row[id]">
                 <img class="flashcardList__img" src="./../photos/$img" alt="">
                 <p class="flashcardList__title">$row[nazwa]</p>
             </a>
