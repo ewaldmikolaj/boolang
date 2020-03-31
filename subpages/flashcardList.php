@@ -5,7 +5,7 @@
         require './../includes/dbh.php';
         $id = $_SESSION['userId'];
 
-        $sql = "SELECT zestaw.IDzestawu as `id`, zestaw.Nazwa as `nazwa`, jezyk.Jezyk as `jezyk` FROM zestaw JOIN jezyk on zestaw.IDjezyka=jezyk.IDjezyka JOIN uzytkownik on zestaw.IDklasy=uzytkownik.IDklasy";
+        $sql = "SELECT DISTINCT zestaw.IDzestawu as `id`, zestaw.Nazwa as `nazwa`, jezyk.Jezyk as `jezyk` FROM zestaw JOIN jezyk on zestaw.IDjezyka=jezyk.IDjezyka JOIN uzytkownik on zestaw.IDklasy=uzytkownik.IDklasy WHERE uzytkownik.IDuzytkownika='$id'";
         $result = mysqli_query($conn, $sql);
 
         while ($row = mysqli_fetch_assoc($result)) {
@@ -21,7 +21,7 @@
                     break;
                 default:
                     $img = 'eng.png';
-                    brak;
+                    break;
             }
             echo <<<SET
             <a class="flashcardList__element" href="./../includes/getSet.php?set_id=$row[id]">

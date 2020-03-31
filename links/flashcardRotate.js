@@ -9,7 +9,7 @@ const next = document.querySelector(".learn__button--next");
 const prev = document.querySelector(".learn__button--prev");
 next.addEventListener("click", (e) => {
     e.preventDefault();
-    if (i < 2) i++;
+    if (i < tabPL.length - 1) i++;
     wordPL.innerHTML = tabPL[i];
     wordEng.innerHTML = tabENG[i];
 });

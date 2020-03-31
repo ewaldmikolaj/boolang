@@ -21,13 +21,14 @@ if (isset($_POST['signup-submit'])) {
         exit();
     } else {
         $hash = password_hash($password, PASSWORD_ARGON2I);
-        $sql2 = "INSERT INTO uzytkownik (Nazwa, Email, Haslo) VALUES('$username', '$email', '$hash');";
-        mysqli_query($conn, $sql2);
-        if (!isset($_SESSION)){
-            session_start();
+        $sql2 = "INSERT INTO uzytkownik(Nazwa, Email, Haslo) VALUES('$username', '$email', '$hash');";
+        if (mysqli_query($conn, $sql2)) {
+            if (!isset($_SESSION)) {
+                session_start();
+            }
+            $_SESSION['username'] = $username;
+            header('Location: ./../pages/index.php');
         }
-        $_SESSION['username'] = $username;
-        header('Location: ./../pages/index.php');
     }
 
 }

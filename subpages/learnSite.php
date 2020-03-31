@@ -1,10 +1,24 @@
 <section class="learn">
-    <h2>Nazwa zestawu fiszek</h2>
-    <p>Postęp: 1/3</p>
+    <h2>
+    <?php
+
+    if (!isset($_GET['set_id'])) {
+        header('location: ./flashcardList.php');
+    } else {
+        require('./../includes/dbh.php');
+        $id = $_GET['set_id'];
+        $sql = "SELECT Nazwa FROM zestaw WHERE IDzestawu=$id;";
+        $result = mysqli_query($conn, $sql);
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo $row['Nazwa'];
+        }
+    }
+    ?>
+    </h2>
     <div class="scene scene--card">
         <div class="card">
-            <div class="card__face card__face--front">front</div>
-            <div class="card__face card__face--back">back</div>
+            <div class="card__face card__face--front"></div>
+            <div class="card__face card__face--back"></div>
         </div>
     </div>
     <div class="learn__buttons">

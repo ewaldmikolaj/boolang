@@ -11,7 +11,6 @@ if (!isset($_SESSION)){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./../links/style.css">
-    <link rel="stylesheet" href="./../links/media.css">
     <title>BooLang | Nauka</title>
 </head>
 <body>

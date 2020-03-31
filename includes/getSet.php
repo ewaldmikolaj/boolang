@@ -21,7 +21,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 $_SESSION['tabPL'] = $wordPL;
 $_SESSION['tabENG'] = $wordEng;
 
-header('location: ./../pages/learn.php');
+header("location: ./../pages/learn.php?set_id=$id");
 
 }
 

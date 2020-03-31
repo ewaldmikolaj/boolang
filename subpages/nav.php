@@ -4,11 +4,15 @@
         <ul class="menu__list">
             <li class="menu__component">
                 <img class="menu__icon" src="./../icons/user (1).png" alt="user">
-                <a href="profileSite.php" class="menu__link">Mój profil</a>
+                <a href="./profileSite.php" class="menu__link">Mój profil</a>
             </li>
             <li class="menu__component">
                 <img class="menu__icon" src="./../icons/mortarboard.png" alt="learn">
-                <a href="flashcardList.php" class="menu__link">Nauka</a>
+                <a href="./flashcardList.php" class="menu__link">Nauka</a>
+            </li>
+            <li class="menu__component">
+                <img class="menu__icon" src="./../icons/seminar.png" alt="learn">
+                <a href="./addFlashcardSet.php" class="menu__link">Dodaj zestaw</a>
             </li>
             <?php
             if (isset($_SESSION['username'])) {

@@ -24,16 +24,21 @@ if (isset($_POST['sign-submit'])) {
                 exit();
             }
             else if ($pwdCheck) {
-                session_start();
-                $_SESSION['username'] = $row['Nazwa'];
-                $_SESSION['userId'] = $row['IDuzytkownika'];
-                if ($row['IDrodzajukonta'] == $result2) {
-                    header('Location: ./../pages/admin.php?zalogowany');
+                if ($row['IDstatusu'] == 2) {
+                    header('Location: ./../pages/signSite.php?uzytkownik_wylaczony');
+                } else {
+                    session_start();
+                    $_SESSION['username'] = $row['Nazwa'];
+                    $_SESSION['userId'] = $row['IDuzytkownika'];
+                    $_SESSION['userType'] = $row['IDrodzajukonta'];
+                    if ($row['IDrodzajukonta'] == $result2) {
+                        header('Location: ./../pages/adminUsers.php?zalogowany');
+                    }
+                    else {
+                    header('Location: ./../pages/index.php?zalogowany');
+                    }
+                    exit();
                 }
-                else {
-                header('Location: ./../pages/index.php?zalogowany');
-                }
-                exit();
             }
             else {
                 header('Location: ./../pages/signSite.php?error');
